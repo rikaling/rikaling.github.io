@@ -1,0 +1,177 @@
+.word{
+    background-color: rgb(252, 253, 255);
+}
+
+.selected{
+    background-color: peachpuff;
+}
+
+
+#btn-load-new-text{
+    display: none;
+}
+
+#unsaved-memo-list {
+    position: relative;
+    max-height: 15em;
+    overflow-y: auto;
+}
+
+#unsaved-memo-word-list {
+    position: relative;
+    max-height: 15em;
+    overflow-y: auto;
+    direction: rtl;
+}
+
+.list-group-item-action{
+    direction: ltr;
+}
+
+body {
+    background-color: lavenderblush;
+}
+
+header {
+    background-color: lightpink;
+}
+
+.container {
+    background-color: snow;
+}
+
+.fa-github {
+    color: whitesmoke;
+  }
+
+.fa-telegram {
+    color:whitesmoke;
+}
+
+.fa-twitter {
+    color:whitesmoke;
+}
+
+.btn {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+
+
+.btn-primary {
+    background-color: salmon!important;
+    border-color: salmon!important;
+}
+
+.btn-primary:active {
+    background-color: rgb(238, 102, 87)!important;
+    border-color: rgb(238, 102, 87)!important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(238, 102, 87)!important;
+    border-color: rgb(238, 102, 87)!important;
+}
+
+.btn-primary:active:hover {
+    background-color: rgb(238, 102, 87)!important;
+    border-color: rgb(238, 102, 87)!important;
+}
+
+.btn-primary:focus {
+    background-color: rgb(238, 102, 87)!important;
+    border-color: rgb(238, 102, 87)!important;
+}
+
+.btn-primary:active:focus {
+    background-color: rgb(238, 102, 87)!important;
+    border-color: rgb(238, 102, 87)!important;
+}
+
+
+.btn-outline-primary {
+    color: darksalmon!important;
+    border-color: darksalmon!important;
+}
+
+.btn-outline-primary:active {
+    background-color: darksalmon!important;
+    color: white!important;
+    border-color: darksalmon!important;
+}
+
+.btn-outline-primary:hover {
+    background-color: darksalmon!important;
+    color: white!important;
+    border-color: darksalmon!important;
+}
+
+.btn-outline-primary:active:hover {
+    background-color: darksalmon!important;
+    color: white!important;
+    border-color: darksalmon!important;
+}
+
+.btn-outline-primary:focus {
+    background-color: darksalmon!important;
+    color: white!important;
+    border-color: darksalmon!important;
+}
+
+.btn-outline-primary:active:focus {
+    background-color: darksalmon;
+    color: white;
+    border-color: darksalmon;
+}
+
+.list-group-item.active {
+    background-color: lightsalmon!important;
+    border-color: lightsalmon!important;
+}
+
+a {
+    color: lightcoral;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: lightcoral;
+    background-color: lightcoral;
+}
+
+/* .form-control { */
+    /* outline-color: darksalmon!important; */
+    /* box-shadow: darksalmon!important; */
+    /* box-shadow: none!important; */
+    /* box-shadow: 5px,5px,rlightsalmoned!important;
+    outline: none!important; */
+    
+    /* border-color: darksalmon!important; */
+/* } */
+
+.form-control:focus{
+    border-color: lightsalmon!important;
+    /* box-shadow: deeppink; */
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px lightsalmon!important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    border-color: lightsalmon!important;
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px lightsalmon!important;
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+    border-color: lightsalmon!important;
+    /* box-shadow:0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px lightsalmon!important; */
+    background-color: lightsalmon!important;
+}
+
+div#text-to-read div{
+    max-height: 30em;
+    overflow-y: auto;
+}
+
+div#text-to-read div p{
+    font-size: 1.4rem;
+}
+
