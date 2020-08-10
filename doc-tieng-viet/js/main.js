@@ -225,7 +225,6 @@ $(() => {
     })
 
     $("#parse-file").click(() => {
-
         loadMemoDict()
         return false
     })

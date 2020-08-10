@@ -1,2 +1,2 @@
-# rikaling.github.io
-About languages and linguistics
+# Rikaling - About languages and linguistics
+
