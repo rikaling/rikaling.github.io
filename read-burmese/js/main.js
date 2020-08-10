@@ -11,11 +11,13 @@ $(() => {
     })
 
     $('#btn-submit-text').click((e) => {
+        e.stopPropagation();
         let text = $('#input-text').val()
         $('#text-parsed').html(genReadContent(text).html())
     })
 
     $(document).on("click", ".syllable", (e) => {
+        e.stopPropagation();
         let span = $(e.currentTarget)
         let index = parseInt(span.attr("data-span-index"))
         if (selectionRange.left == index + 1) {
@@ -31,6 +33,7 @@ $(() => {
     })
 
     $('#btn-copy-word').click((e) => {
+        e.stopPropagation();
         let element = $('#input-word').get(0)
         let val = element.value
         element.select()
@@ -39,6 +42,7 @@ $(() => {
     })
 
     $('#btn-note').click((e) => {
+        e.stopPropagation();
         let note = $('#input-note').val()
         let word = $('#input-word').val()
         if (word in newNotes) {
@@ -66,10 +70,12 @@ $(() => {
     })
 
     $('#btn-load-file').click((e) => {
+        e.stopPropagation();
         startRead();
     })
 
     $('#btn-save-notes').click((e) => {
+        e.stopPropagation();
         if (Object.keys(newNotes).length > 0) {
             saveNotes();
             download(JSON.stringify(oldNotes, null, 2), 'notes.json', 'text/plain');
@@ -89,6 +95,14 @@ $(() => {
         loadNoteInput()
     })
 
+    $('#input-word').click((e) => {
+        e.stopPropagation()
+    })
+
+    $('#input-note').click((e) => {
+        e.stopPropagation();
+    })
+
     $('#input-note').keypress((e) => {
         if (e.code == 'Enter') {
             if (e.ctrlKey) {
@@ -98,6 +112,8 @@ $(() => {
         }
     })
 
+
+
     $('#btn-hide').click((e) => {
         $('#btn-new-text').show()
     })
@@ -105,6 +121,38 @@ $(() => {
     $('#btn-new-text').click((e) => {
         $(e.target).hide()
     })
+
+    $('#link-ornagai').click((e) => {
+        e.stopPropagation();
+        let url = 'http://www.ornagai.com/#/search/' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
+    $('#link-my-ja-dic').click((e) => {
+        e.stopPropagation();
+        let url = 'http://gigadict.com/cgi-bin/My/dicMyJp_My.cgi?word=' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
+    $('#link-sealang').click((e) => {
+        e.stopPropagation();
+        let url = 'http://www.sealang.net/burmese/dictionary.htm?' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
+    $('#link-wiktionary').click((e) => {
+        e.stopPropagation();
+        let url = 'https://en.wiktionary.org/wiki/' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
+    $('#link-glosbe').click((e) => {
+        e.stopPropagation();
+        let url = 'https://ja.glosbe.com/my/zh/' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
+    
 
 
 })
