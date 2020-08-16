@@ -6,6 +6,10 @@
     background-color: aliceblue;
 }
 
+.hanja-group {
+    background-color: beige;
+}
+
 .selected{
     background-color: powderblue;
 }
@@ -64,5 +68,6 @@ body {
 nav#possible-lemmas a.nav-link {
     padding:0rem  0.2rem
 }
+
 
 

@@ -47,7 +47,7 @@ $(() => {
                 selectionRange.right = index;
             }
         } else {
-            if (e.ctrlKey) {
+            if (e.ctrlKey || span.hasClass('hanja-group')) {
                 selectWholeGroup(index);
             } else {
                 selectionRange.left = index;
@@ -451,10 +451,19 @@ function highlightParticles() {
     for (const group of groups) {
         let s = groupToText(group);
         let pid = indexParticle(s);
+        let mainWordEnd = s.length;
         if (pid > -1) {
+            mainWordEnd = pid;
             for (let i = pid; i < group.length; ++i) {
                 let span = $("#span-" + String(group[i]));
                 span.addClass("particle");
+            }
+        }
+        let mainWord = s.substring(0, mainWordEnd);
+        if (mainWord.length > 1 && mainWord in HANJA) {
+            for (let i = 0; i < mainWordEnd; ++i) {
+                let span = $("#span-" + String(group[i]));
+                span.addClass("hanja-group");
             }
         }
     }
@@ -462,12 +471,16 @@ function highlightParticles() {
 
 function selectWholeGroup(spanIndex) {
     let group = groups[spanIndexToGroupIndex[spanIndex]];
+    let selection = []
     for (const id of group) {
         let span = $("#span-" + String(id));
         if (!span.hasClass('particle')) {
-            span.click();
+            selection.push(id);
         }
     }
+    selection.sort();
+    selectionRange.left = selection[0];
+    selectionRange.right = selection[selection.length - 1];
 }
 
 
