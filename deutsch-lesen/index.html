@@ -62,25 +62,111 @@
         <div id="verb-detail">
             <form>
                 <div class="form-group">
-                    <div class="input-group row">
+                    <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Prefix + Verb</span>
                         </div>
-                        <input type="text" name="prefix" id="prefix" class="form-control col-2">
-                        <input type="text" name="verb" id="verb" class="form-control col-8">
+                        <input type="text" name="prefix" id="input-prefix" class="form-control">
+                        <input type="text" name="verb" id="input-verb" class="form-control">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <div class="form-check form-check-inline">
-                                <input type="checkbox" name="storng" id="strong" class="form-check-input">
-                                <label for="strong" class="form-check-label">Strong</label>
+                                    <input type="checkbox" name="storng" id="strong" class="form-check-input">
+                                    <label for="strong" class="form-check-label">Strong</label>
+                                </div>
                             </div>
-                              </div>
                             <button class="btn btn-outline-secondary" type="button" id="btn-submit-verb">OK</button>
-                          </div>
+                        </div>
                     </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-check form-check-inline align-middle">
+                            <input type="radio" class="form-check-input" id="sein" name="auxiliary">
+                            <label for="sein" class="form-check-label">Sein</label>
+                        </div>
+                        <div class="form-check form-check-inline align-middle">
+                            <input type="radio" class="form-check-input" id="haben" name="auxiliary">
+                            <label for="haben" class="form-check-label">Haben</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Past Particle</div>
+                            </div>
+                            <input type="text" class="form-control" id="input-past-particle" name="past-particle">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <table class="table table-bordered text-center align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Present Indicative</th>
+                                <th scope="col">Past Indicative</th>
+                                <th scope="col">Subjunctive I</th>
+                                <th scope="col">Subjunctive II</th>
+                            </tr>
+                        </thead>
+                        <tbody class="form-group">
+                            <tr>
+                                <th scope="row">ich</th>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">du</th>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">er</th>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">wir</th>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">ihr</th>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">sie</th>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </form>
         </div>
+
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="input-finite">
+            </div>
+            <button type="button" class="btn btn-primary" id="btn-submit-finite">ok</button>
+        </form>
+        <ul id="infinitives"></ul>
 
     </div>
 
@@ -99,6 +185,9 @@
     <script src="https://kit.fontawesome.com/113d6398a1.js" crossorigin="anonymous"></script>
 
     <!-- My scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/verb.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

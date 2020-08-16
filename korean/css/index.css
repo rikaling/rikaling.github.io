@@ -1,0 +1,44 @@
+.hangul{
+    background-color: rgb(252, 253, 255);
+}
+
+.selected{
+    background-color: powderblue;
+}
+
+#text-parsed{
+    font-size: 1.4rem;
+}
+
+#btn-new-text{
+    display: none;
+}
+
+header {
+    background-color: cornflowerblue;
+}
+
+.container {
+    background-color:  whitesmoke;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+.fa-github {
+    color: whitesmoke;
+  }
+
+.fa-telegram {
+    color:whitesmoke;
+}
+
+.fa-twitter {
+    color:whitesmoke;
+}
+
+nav#possible-lemmas a.nav-link {
+    padding:0rem  0.2rem
+}
+
+

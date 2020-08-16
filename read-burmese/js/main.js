@@ -146,9 +146,21 @@ $(() => {
         $(e.target).attr('href', url);
     })
 
+    $('#link-google-translate').click((e) => {
+        e.stopPropagation();
+        let url = 'https://translate.google.com/?hl=my#view=home&op=translate&sl=my&tl=zh-CN&text=' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
     $('#link-glosbe').click((e) => {
         e.stopPropagation();
         let url = 'https://ja.glosbe.com/my/zh/' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
+    $('#link-hujiang').click((e) => {
+        e.stopPropagation();
+        let url = 'https://dict.hjenglish.com/kr/' + $('#input-word').val();
         $(e.target).attr('href', url);
     })
 

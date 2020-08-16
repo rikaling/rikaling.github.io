@@ -1,0 +1,44 @@
+{
+    "sein": {
+        "present particle": "seiend",
+        "past particle": "gewesen",
+        "auxiliary": "sein",
+        "present indicative": {
+            "ich": "bin",
+            "du": "bist",
+            "er": "ist",
+            "wir": "sind",
+            "ihr": "seid",
+            "sie": "sind"
+        },
+        "imperative": {
+            "du": "sei",
+            "ihr": "seid",
+            "Sie": "seien"
+        },
+        "past indicative": {
+            "ich": "war",
+            "du": "warst",
+            "er": "war",
+            "wir": "waren",
+            "ihr": "wart",
+            "sie": "waren"
+        },
+        "subjunctive I": {
+            "ich": "sei",
+            "du": "seist",
+            "er": "sei",
+            "wir": "seien",
+            "ihr": "seiet",
+            "sie": "seien"
+        },
+        "subjunctive II": {
+            "ich": "wäre",
+            "du": "wärest",
+            "er": "wäre",
+            "wir": "wären",
+            "ihr": "wäret",
+            "sie": "wären"
+        }
+    }
+}
