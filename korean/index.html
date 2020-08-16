@@ -61,7 +61,8 @@
 
             </div>
             <div class="d-flex justify-content-end">
-                <button type="button" class="btn btn-primary" id="btn-parse">Parse</button>
+                <button type="button" class="btn btn-secondary" id="btn-clear-input-text">Clear</button>
+                <button type="button" class="ml-2 btn btn-primary" id="btn-parse">Parse</button>
                 <button type="button" class="ml-2 btn btn-secondary" id="btn-hide" data-toggle="collapse"
                     data-target="#form-init">Hide</button>
             </div>
@@ -86,7 +87,8 @@
                 <div class="input-group">
                     <input type="text" class="form-control" name="input-word" id="input-word">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="btn-copy-word">Copy</button>
+                        <button class="btn btn-outline-secondary" type="button" id="btn-compose">Decompose</button>
+                        <button class="btn btn-outline-info" type="button" id="btn-copy-word">Copy</button>
                         <button type="button" id="btn-note" class="btn btn-outline-primary">Note</button>
                     </div>
                 </div>
@@ -99,8 +101,10 @@
 
         <div>
             <button id="btn-save-notes" class="btn btn-primary" type="button">Save Notes</button>
-            <button type="button" class="ml-2 btn btn-secondary" id="btn-new-text" data-toggle="collapse"
+            <button id="btn-copy-notes" class="btn btn-info" type="button">Copy Notes</button>
+            <button type="button" class=" btn btn-secondary" id="btn-new-text" data-toggle="collapse"
                 data-target="#form-init">New Text</button>
+                <button id="btn-clear-input-note" class="btn btn-secondary float-right" type="button">Clear Note</button>
         </div>
 
         <hr>

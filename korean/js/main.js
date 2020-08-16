@@ -199,24 +199,61 @@ $(() => {
     })
 
     $(document).on('click', '#note-list-nav a', (e) => {
+        e.stopPropagation();
         let word = $(e.target).text()
         $('#input-word').val(word)
         loadNoteInput();
     })
 
     $(document).on('click', '#unsaved-memo-list dt', (e) => {
+        e.stopPropagation();
         let word = $(e.target).text();
         $('#input-word').val(word);
         loadNoteInput();
     })
 
     $(document).on('click', '#unsaved-memo-list dd', (e) => {
+        e.stopPropagation();
         let word = $(e.target).text();
         $('#input-word').val(word);
         loadNoteInput();
     })
 
+    $("#btn-copy-notes").click((e) => {
+        e.stopPropagation();
+        copyNotes();
+    })
+
+    $('#btn-clear-input-text').click((e) => {
+        e.stopPropagation();
+        $('#input-text').val('')
+    })
+
+    $('#btn-clear-input-note').click((e) => {
+        e.stopPropagation();
+        $('#input-note').val('')
+    })
+
+    $('#btn-compose').one('click', decomposeHandler);
 })
+
+function decomposeHandler(e) {
+    e.stopPropagation();
+    let input = $('#input-word');
+    let word = input.val();
+    input.val(decomposeString(word));
+    $(e.target).one('click', composeHandler);
+    $(e.target).text('Compose');
+}
+
+function composeHandler(e) {
+    e.stopPropagation();
+    let input = $('#input-word');
+    let word = input.val();
+    input.val(composeString(word));
+    $(e.target).one('click', decomposeHandler);
+    $(e.target).text('Decompose');
+}
 
 function select() {
     $(".selected").removeClass("selected")
@@ -418,4 +455,20 @@ function selectWholeGroup(spanIndex) {
             span.click();
         }
     }
+}
+
+
+function copyNotes() {
+    let ta = $("<textarea></textarea>");
+    let val = ''
+    for (const key in newNotes) {
+        if (newNotes[key].length > 0) {
+            val += ['**', key, '** ', newNotes[key], '\n'].join('')
+        }
+    }
+    ta.val(val.trim())
+    $('body').append(ta)
+    ta.get(0).select()
+    document.execCommand('copy')
+    ta.remove()
 }

@@ -41,11 +41,19 @@ function hasFinalConsonant(c) {
     return decompose(c).finalConsonant.length > 0;
 }
 
-function isVowel(c) {
+function isConsonant(c) {
     return c >= 'ㄱ' && c <= 'ㅎ'
 }
 
-function isConsonant(c) {
+function isFinalConsonant(c) {
+    return FINAL_CONSONANTS.includes(c);
+}
+
+function isInitialConsonant(c) {
+    return INITIAL_CONSONANTS.includes(c);
+}
+
+function isVowel(c) {
     return c >= 'ㅏ' && c <= 'ㅣ'
 }
 
@@ -87,4 +95,42 @@ function decompose(c) {
         vowel: VOWELS[vId],
         finalConsonant: FINAL_CONSONANTS[finId]
     };
+}
+
+function decomposeString(s) {
+    let rs = [];
+    for (let i = 0; i < s.length; ++i) {
+        let c = s.charAt(i);
+        let r = decompose(c);
+        rs.push(r.initialConsonant);
+        rs.push(r.vowel);
+        rs.push(r.finalConsonant);
+    }
+    return rs.join('');
+}
+
+function composeString(s) {
+    let rs = []
+    if (s.length < 2) {
+        return s;
+    }
+    let final = '';
+    let vowel = '';
+    let initial = '';
+    for (let i = s.length - 1; i >= 0; --i) {
+        let c = s.charAt(i);
+        if (isFinalConsonant(c) && final.length == 0 && vowel.length == 0) {
+            final = c;
+        } else if (isVowel(c)) {
+            vowel = c;
+        } else if (isInitialConsonant(c)) {
+            initial = c;
+            rs.push(compose(initial, vowel, final));
+            final = '';
+            vowel = '';
+            initial = '';
+        }
+    }
+    rs.reverse();
+    return rs.join('');
 }
