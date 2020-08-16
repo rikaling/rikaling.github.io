@@ -24,6 +24,7 @@ $(() => {
         let text = $('#input-text').val();
         let html = generateHtml(text);
         $('#text-parsed').html(html);
+        highlightParticles();
     })
 
     $(document).on("click", ".hangul", (e) => {
@@ -46,8 +47,12 @@ $(() => {
                 selectionRange.right = index;
             }
         } else {
-            selectionRange.left = index;
-            selectionRange.right = index;
+            if (e.ctrlKey) {
+                selectWholeGroup(index);
+            } else {
+                selectionRange.left = index;
+                selectionRange.right = index;
+            }
         }
         select()
         $('#input-word').focus()
@@ -163,10 +168,10 @@ $(() => {
         }
     })
 
-    $('#link-naver-ko-zh').click((e)=>{
+    $('#link-naver-ko-zh').click((e) => {
         e.stopPropagation();
         let url = 'https://dict.naver.com/kozhdict/#/search?query=' + $('#input-word').val();
-        $(e.target).attr('href',url);
+        $(e.target).attr('href', url);
     })
 
     $('#link-wiktionary').click((e) => {
@@ -191,6 +196,24 @@ $(() => {
         e.stopPropagation();
         let url = 'https://dict.hjenglish.com/kr/' + $('#input-word').val();
         $(e.target).attr('href', url);
+    })
+
+    $(document).on('click', '#note-list-nav a', (e) => {
+        let word = $(e.target).text()
+        $('#input-word').val(word)
+        loadNoteInput();
+    })
+
+    $(document).on('click', '#unsaved-memo-list dt', (e) => {
+        let word = $(e.target).text();
+        $('#input-word').val(word);
+        loadNoteInput();
+    })
+
+    $(document).on('click', '#unsaved-memo-list dd', (e) => {
+        let word = $(e.target).text();
+        $('#input-word').val(word);
+        loadNoteInput();
     })
 
 })
@@ -294,7 +317,7 @@ function generateHtml(text) {
 function groupToText(group) {
     let s = ''
     for (const index of group) {
-        s += spanIndexToText(index);
+        s += spanIndexToText[index];
     }
     return s;
 }
@@ -319,15 +342,24 @@ function showNoteInList(word, note = undefined) {
     }
     let dt = $('#note-list dt[data-word="' + word + '"]')
     if (dt.length == 0) {
-        dt = $('<dt></dt>')
-        dt.text(word).attr('data-word', word)
-        let dd = $('<dd></dd>')
-        dd.text(note)
+        let id = 'note-' + String(noteIndex++);
+        dt = $('<dt></dt>');
+        dt.text(word).attr('data-word', word);
+        let dd = $('<dd></dd>');
+        dt.attr('id', id);
+        dd.text(note);
         $('#note-list').append(dt).append(dd)
+        let a = $('<a></a>')
+        a.text(word)
+            .addClass('list-group-item').addClass('list-group-item-action').addClass('text-wrap')
+            .attr('href', '#' + id)
+            .appendTo("#note-list-nav");
     } else {
         let dd = dt.next()
         dd.text(note)
     }
+
+
 }
 
 function loadNoteInput() {
@@ -348,14 +380,42 @@ function saveNotes() {
     for (const word in newNotes) {
         oldNotes[word] = newNotes[word]
     }
-    newNotes = {}
-    $('#note-list').empty()
+    newNotes = {};
+    $('#note-list').empty();
+    $('#note-list-nav').empty();
+    noteIndex = 0;
 }
 
 function deleteNoteFromList(word) {
     let dt = $('#note-list dt[data-word="' + word + '"]')
     if (dt.length > 0) {
+        let id = dt.attr('id');
+        $('#note-list-nav a[href="#' + id + '"]').remove()
         dt.next().remove()
         dt.remove()
+    }
+}
+
+
+function highlightParticles() {
+    for (const group of groups) {
+        let s = groupToText(group);
+        let pid = indexParticle(s);
+        if (pid > -1) {
+            for (let i = pid; i < group.length; ++i) {
+                let span = $("#span-" + String(group[i]));
+                span.addClass("particle");
+            }
+        }
+    }
+}
+
+function selectWholeGroup(spanIndex) {
+    let group = groups[spanIndexToGroupIndex[spanIndex]];
+    for (const id of group) {
+        let span = $("#span-" + String(id));
+        if (!span.hasClass('particle')) {
+            span.click();
+        }
     }
 }

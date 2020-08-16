@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div id="text-parsed"></div>
+        <div id="text-parsed" class="mb-2"></div>
 
 
         <div class="btn-group" role="group">
@@ -81,7 +81,7 @@
 
 
 
-        <form class="mt-3">
+        <form class="mt-0">
             <div class="form-group">
                 <div class="input-group">
                     <input type="text" class="form-control" name="input-word" id="input-word">
@@ -106,7 +106,17 @@
         <hr>
 
         <h4 class="text-center">Notes</h4>
-        <dl id="note-list"></dl>
+
+        <div class="row">
+            <div class="col-3">
+                <div id="note-list-nav" class="list-group mt-2 mb-2">
+                </div>
+            </div>
+            <div class="col-9">
+                <dl data-spy="scroll" data-target="#note-list-nav" data-offset="0" id="note-list">
+                </dl>
+            </div>
+        </div>
 
     </div>
 
@@ -138,6 +148,7 @@
     <script src="js/utils.js" charset="utf-8"></script>
     <script src="js/file.js" charset="utf-8"></script>
     <script src="js/hangul.js" charset="utf-8"></script>
+    <script src="js/particle.js" charset="utf-8"></script>
     <script src="js/lemmatizer.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
 </body>

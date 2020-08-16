@@ -2,16 +2,40 @@
     background-color: rgb(252, 253, 255);
 }
 
+.particle {
+    background-color: aliceblue;
+}
+
 .selected{
     background-color: powderblue;
 }
 
 #text-parsed{
     font-size: 1.4rem;
+    max-height: 20em;
+    overflow-y: auto;
 }
+
 
 #btn-new-text{
     display: none;
+}
+
+#note-list {
+    position: relative;
+    max-height: 15em;
+    overflow-y: auto;
+}
+
+#note-list-nav {
+    position: relative;
+    max-height: 15em;
+    overflow-y: auto;
+    direction: rtl;
+}
+
+.list-group-item-action{
+    direction: ltr;
 }
 
 header {
