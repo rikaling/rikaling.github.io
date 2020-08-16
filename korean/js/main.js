@@ -200,7 +200,7 @@ $(() => {
 
     $('#link-daum').click((e) => {
         e.stopPropagation();
-        let url = 'https://dic.daum.net/index.do?dic=ch&q=' + $('#input-word').val();
+        let url = 'https://dic.daum.net/search.do?q=' + $('#input-word').val()+'&dic=ch';
         $(e.target).attr('href', url);
     })
 
