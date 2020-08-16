@@ -198,6 +198,12 @@ $(() => {
         $(e.target).attr('href', url);
     })
 
+    $('#link-daum').click((e) => {
+        e.stopPropagation();
+        let url = 'https://dic.daum.net/index.do?dic=ch&q=' + $('#input-word').val();
+        $(e.target).attr('href', url);
+    })
+
     $(document).on('click', '#note-list-nav a', (e) => {
         e.stopPropagation();
         let word = $(e.target).text()
@@ -408,6 +414,13 @@ function retrieveNote(word) {
         return newNotes[word];
     } else if (word in oldNotes) {
         return oldNotes[word];
+    } else if (word in HANJA) {
+        let hanjas = HANJA[word];
+        let s = '';
+        for (const hanja of hanjas) {
+            s += '【' + hanja + '】；'
+        }
+        return s.substr(0, s.length - 1);
     } else {
         return '';
     }
