@@ -123,7 +123,7 @@ class Text {
                         }, particleNode, hangulEnd);
                         hangulEnd = particleNode.prev;
                     }
-                    if (hangulString.substring(0, mainWordEnd) in HANJA) {
+                    if (mainWordEnd>1 && hangulString.substring(0, mainWordEnd) in HANJA) {
                         TextNode.each((n) => {
                             n.isHanja = true;
                         }, hangulStart, hangulEnd);

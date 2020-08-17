@@ -16,7 +16,7 @@ class TextNode {
             if (this.justAfter(this._textInstance.selectionRange.right)) {
                 this.select();
                 this._textInstance.selectionRange.right = this;
-            } else if (this.justBefore(this._textInstance.selectionRange.left.prev)) {
+            } else if (this.justBefore(this._textInstance.selectionRange.left)) {
                 this.select();
                 this._textInstance.selectionRange.left = this;
             } else if (ctrlKey) {
