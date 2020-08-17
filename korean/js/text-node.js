@@ -1,3 +1,4 @@
+'use strict';
 class TextNode {
     constructor(text, textInstance, prev = null, next = null) {
         this._text = text;
@@ -12,10 +13,10 @@ class TextNode {
 
     click(ctrlKey) {
         if (this._textInstance.selected) {
-            if (this._textInstance.selectionRange.right.next == this) {
+            if (this.justAfter(this._textInstance.selectionRange.right)) {
                 this.select();
                 this._textInstance.selectionRange.right = this;
-            } else if (this._textInstance.selectionRange.left.prev == this) {
+            } else if (this.justBefore(this._textInstance.selectionRange.left.prev)) {
                 this.select();
                 this._textInstance.selectionRange.left = this;
             } else if (ctrlKey) {
@@ -47,30 +48,39 @@ class TextNode {
             return;
         }
         this._element.addClass('selected');
-        console.log(this._element)
         this._selected = true;
-        console.log(this._textInstance.selectionRange)
-    }
-
-    selectGroup() {
-        let groupStart = this;
-        let groupEnd = this;
-        while (groupStart.prev != null && groupStart.prev.isHangul) {
-            groupStart = groupStart.prev;
-        }
-        while (groupEnd.next != null && groupEnd.next.isHangul && !groupEnd.next.isParticle) {
-            groupEnd = groupEnd.next;
-        }
-        this._textInstance.selectRange(groupStart, groupEnd);
     }
 
     unselect() {
         if (this._element == null) {
             return;
         }
+        this._selected = false;
         this._element.removeClass('selected');
     }
 
+    selectGroup() {
+        let groupRange = this.groupRange;
+        this._textInstance.selectRange(groupRange.start, groupRange.end);
+    }
+
+    get groupRange() {
+        let groupStart = this;
+        let groupEnd = this;
+        while (groupStart.prev != null && groupStart.prev.isHangul) {
+            groupStart = groupStart.prev;
+        }
+        if (this.isParticle) {
+            while (groupEnd.next != null && groupEnd.next.isHangul) {
+                groupEnd = groupEnd.next;
+            }
+        } else {
+            while (groupEnd.next != null && groupEnd.next.isHangul && !groupEnd.next.isParticle) {
+                groupEnd = groupEnd.next;
+            }
+        }
+        return { start: groupStart, end: groupEnd };
+    }
 
     nextTo(node) {
         return this.justAfter(node) || this.justBefore(node);
@@ -124,8 +134,6 @@ class TextNode {
         return curNode;
     }
 
-
-
     static hasBetween(n1, n2) {
         let between = {
             newline: false,
@@ -173,7 +181,7 @@ class TextNode {
     }
 
     static textInRange(start, end) {
-        if (start==null||end==null){
+        if (start == null || end == null) {
             return '';
         }
         let t = '';

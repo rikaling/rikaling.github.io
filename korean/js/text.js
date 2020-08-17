@@ -1,3 +1,4 @@
+'use strict';
 class Text {
     constructor(text) {
         this.parse(text)
@@ -6,7 +7,6 @@ class Text {
             right: null
         };
     }
-
 
     get root() {
         return this._root;
@@ -20,7 +20,6 @@ class Text {
         return !(this.selectionRange.left == null || this.selectionRange.right == null);
     }
 
-
     get selectedText() {
         return TextNode.textInRange(this.selectionRange.left, this.selectionRange.right);
     }
@@ -30,14 +29,8 @@ class Text {
         this.selectionRange.right = right;
     }
 
-
     getNode(id) {
-        let curNode = this._root;
-        while (id > 0) {
-            curNode = curNode.next;
-            --id;
-        }
-        return curNode;
+        return this._root.nextN(id);
     }
 
     clearSelection() {
@@ -50,10 +43,10 @@ class Text {
         this.setSelectionRange(null, null);
     }
 
-
-
-
-
+    /** 
+     * Select selects the only node and clear other selection
+     * @param {TextNode} node
+     */
     select(node) {
         this.clearSelection();
         this.setSelectionRange(node, node);
@@ -69,22 +62,21 @@ class Text {
     }
 
     generateHtml(container) {
-        let nodeIndex = 0;
         let p = $('<p></p>');
         let curNode = this.root;
         while (curNode != null) {
             if (curNode.isHangul) {
-                let span = $('<span></span>');
-                span.text(curNode.text);
+                let span = $('<span></span>')
+                    .text(curNode.text)
+                    .data('node', curNode)
+                    .addClass('hangul');
                 curNode.element = span;
-                span.addClass('hangul');
                 if (curNode.isParticle) {
                     span.addClass('particle');
                 }
                 if (curNode.isHanja) {
                     span.addClass('hanja');
                 }
-                span.attr('id', 'node-' + String(nodeIndex));
                 p.append(span);
             } else if (curNode.isNewline) {
                 container.append(p);
@@ -94,7 +86,6 @@ class Text {
             } else {
                 p.append(curNode.text);
             }
-            ++nodeIndex;
             curNode = curNode.next;
         }
         if (p.html().length > 0) {
@@ -123,8 +114,8 @@ class Text {
                     hangulEnd = curNode;
                     let hangulString = TextNode.textInRange(hangulStart, hangulEnd);
                     let pid = indexParticle(hangulString);
-                    let mainWordEnd = hangulString.length;
-                    if (pid > -1) {
+                    let mainWordEnd = hangulString.length; // test hanja
+                    if (pid > -1) { // ends with particle
                         mainWordEnd = pid;
                         let particleNode = hangulStart.nextN(pid);
                         TextNode.each((n) => {

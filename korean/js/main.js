@@ -1,22 +1,21 @@
 'use strict';
 
 $(() => {
-    $('#btn-input-word').click(() => {
-        $('#list-lemmas').empty();
-        let word = $('#input-word').val();
-        let lemmas = lemmatize(word);
-        for (const lemma of lemmas) {
-            $('<li></li>').text(lemma).appendTo('#list-lemmas');
-        }
-    });
+    // $('#btn-input-word').click(() => {
+    //     $('#list-lemmas').empty();
+    //     let word = $('#input-word').val();
+    //     let lemmas = lemmatize(word);
+    //     for (const lemma of lemmas) {
+    //         $('<li></li>').text(lemma).appendTo('#list-lemmas');
+    //     }
+    // });
 
-
-    $('#btn-input-char').click(() => {
-        $('#composed').empty();
-        let char = $('#input-char').val();
-        let r = decompose(char)
-        $('#composed').text(r.initialConsonant + ' ' + r.vowel + ' ' + r.finalConsonant)
-    });
+    // $('#btn-input-char').click(() => {
+    //     $('#composed').empty();
+    //     let char = $('#input-char').val();
+    //     let r = decompose(char)
+    //     $('#composed').text(r.initialConsonant + ' ' + r.vowel + ' ' + r.finalConsonant)
+    // });
 
     $('#btn-parse').click((e) => {
         e.stopPropagation();
@@ -27,10 +26,7 @@ $(() => {
 
     $(document).on("click", ".hangul", (e) => {
         e.stopPropagation();
-        let span = $(e.currentTarget);
-        let id = parseSpanIndex(span.attr('id'));
-        let node = text.getNode(id);
-        node.click(e.ctrlKey);
+        $(e.target).data('node').click(e.ctrlKey);
         updateInputWord();
         $('#input-word').focus()
     })
@@ -48,7 +44,9 @@ $(() => {
 
     $('body').click((e) => {
         if (!$(e.target).hasClass('hangul')) {
-            text.clearSelection();
+            if (text != null) {
+                text.clearSelection();
+            }
         }
     });
 
@@ -90,11 +88,19 @@ $(() => {
         showPossibleLemmas();
     })
 
+    $('#input-file').click((e) => {
+        e.stopPropagation();
+    })
+
     $('#input-word').click((e) => {
         e.stopPropagation();
     })
 
     $('#input-note').click((e) => {
+        e.stopPropagation();
+    })
+
+    $('#input-text').click((e) => {
         e.stopPropagation();
     })
 
@@ -253,7 +259,7 @@ function showPossibleLemmas() {
 }
 
 
-function updateInputWord(){
+function updateInputWord() {
     $('#input-word').val(text.selectedText);
     showPossibleLemmas();
     loadNoteInput();
