@@ -21,40 +21,17 @@ $(() => {
     $('#btn-parse').click((e) => {
         e.stopPropagation();
         e.preventDefault();
-        let text = $('#input-text').val();
-        let html = generateHtml(text);
-        $('#text-parsed').html(html);
-        highlightParticles();
+        text = new Text($('#input-text').val());
+        text.generateHtml($('#text-parsed'));
     })
 
     $(document).on("click", ".hangul", (e) => {
         e.stopPropagation();
         let span = $(e.currentTarget);
-        let index = parseSpanIndex(span.attr('id'));
-        let groupIndex = spanIndexToGroupIndex[index];
-        if (selectionRange.left == index + 1) {
-            if (groupIndex == spanIndexToGroupIndex[selectionRange.left] || e.ctrlKey) {
-                selectionRange.left = index;
-            } else {
-                selectionRange.left = index;
-                selectionRange.right = index;
-            }
-        } else if (selectionRange.right == index - 1) {
-            if (groupIndex == spanIndexToGroupIndex[selectionRange.right] || e.ctrlKey) {
-                selectionRange.right = index;
-            } else {
-                selectionRange.left = index;
-                selectionRange.right = index;
-            }
-        } else {
-            if (e.ctrlKey || span.hasClass('hanja-group')) {
-                selectWholeGroup(index);
-            } else {
-                selectionRange.left = index;
-                selectionRange.right = index;
-            }
-        }
-        select()
+        let id = parseSpanIndex(span.attr('id'));
+        let node = text.getNode(id);
+        node.click(e.ctrlKey);
+        updateInputWord();
         $('#input-word').focus()
     })
 
@@ -71,9 +48,7 @@ $(() => {
 
     $('body').click((e) => {
         if (!$(e.target).hasClass('hangul')) {
-            selectionRange.left = -1
-            selectionRange.right = -1
-            $(".selected").removeClass("selected")
+            text.clearSelection();
         }
     });
 
@@ -109,9 +84,10 @@ $(() => {
     });
 
     $('#input-word').blur((e) => {
-        let input = $(e.target)
-        input.val(input.val().trim())
-        loadNoteInput()
+        let input = $(e.target);
+        input.val(input.val().trim());
+        loadNoteInput();
+        showPossibleLemmas();
     })
 
     $('#input-word').click((e) => {
@@ -168,6 +144,8 @@ $(() => {
         }
     })
 
+
+    // Handle events of dictionary links
     $('#link-naver-ko-zh').click((e) => {
         e.stopPropagation();
         let url = 'https://dict.naver.com/kozhdict/#/search?query=' + $('#input-word').val();
@@ -200,10 +178,12 @@ $(() => {
 
     $('#link-daum').click((e) => {
         e.stopPropagation();
-        let url = 'https://dic.daum.net/search.do?q=' + $('#input-word').val()+'&dic=ch';
+        let url = 'https://dic.daum.net/search.do?q=' + $('#input-word').val() + '&dic=ch';
         $(e.target).attr('href', url);
     })
 
+
+    // Handle events of note list
     $(document).on('click', '#note-list-nav a', (e) => {
         e.stopPropagation();
         let word = $(e.target).text()
@@ -211,14 +191,14 @@ $(() => {
         loadNoteInput();
     })
 
-    $(document).on('click', '#unsaved-memo-list dt', (e) => {
+    $(document).on('click', '#note-list dt', (e) => {
         e.stopPropagation();
         let word = $(e.target).text();
         $('#input-word').val(word);
         loadNoteInput();
     })
 
-    $(document).on('click', '#unsaved-memo-list dd', (e) => {
+    $(document).on('click', '#note-list dd', (e) => {
         e.stopPropagation();
         let word = $(e.target).text();
         $('#input-word').val(word);
@@ -261,23 +241,7 @@ function composeHandler(e) {
     $(e.target).text('Decompose');
 }
 
-function select() {
-    $(".selected").removeClass("selected")
-    let text = ''
-    for (let i = selectionRange.left; i <= selectionRange.right; ++i) {
-        let span = $("#span-" + String(i));
-        span.addClass("selected");
-        if (i > selectionRange.left) {
-            if (spanIndexToGroupIndex[i] != spanIndexToGroupIndex[i - 1]) {
-                text += ' ';
-            }
-        }
-        text += spanIndexToText[i];
-    }
-    $("#input-word").val(text);
-    showPossibleLemmas();
-    loadNoteInput();
-}
+
 
 function showPossibleLemmas() {
     $('#possible-lemmas').empty();
@@ -288,96 +252,15 @@ function showPossibleLemmas() {
     }
 }
 
-function parse(text) {
-    let parsedText = [];
-    for (let i = 0; i < text.length; ++i) {
-        let c = text.charAt(i);
-        if (onlyHangul(c)) {
-            parsedText.push(c);
-        } else if (c == '\n') {
-            if (lastElement(parsedText) != '\n') {
-                parsedText.push(c);
-            }
-        } else if (isBlank(c)) {
-            if (!onlyHangul(lastElement(parsedText))) {
-                parsedText[parsedText.length - 1] += c;
-            } else {
-                parsedText.push(c);
-            }
-        } else {
-            let le = lastElement(parsedText);
-            if (le != undefined && !(onlyHangul(le) || le == '\n')) {
-                parsedText[parsedText.length - 1] += c;
-            } else {
-                parsedText.push(c);
-            }
-        }
-    }
-    return parsedText;
+
+function updateInputWord(){
+    $('#input-word').val(text.selectedText);
+    showPossibleLemmas();
+    loadNoteInput();
 }
 
-function generateHtml(text) {
-    let spanIndex = 0;
-    let div = $('<div></div>');
-    let p = $('<p></p>');
-    let parsedText = parse(text);
-    let lastPart = '';
-    for (const s of parsedText) {
-        if (onlyHangul(s)) {
-            if (onlyHangul(lastPart)) {
-                lastElement(groups).push(spanIndex);
-            } else {
-                groups.push([spanIndex]);
-            }
-            let span = $('<span></span>');
-            span.text(s);
-            span.addClass('hangul');
-            span.attr('id', 'span-' + String(spanIndex));
-            spanIndexToText.push(s);
-            ++spanIndex;
-            p.append(span);
-        } else if (s == '\n') {
-            div.append(p);
-            p = $('<p></p>');
-            spanIndexToText.push(s);
-            ++spanIndex;
-        } else if (isBlank(s)) {
-            p.append(s);
-        } else {
-            p.append(s);
-            spanIndexToText.push(s);
-            ++spanIndex;
-        }
-        lastPart = s;
-    }
-    if (p.text().length > 0) {
-        div.append(p);
-    }
-    initSpanIndexToGroupIndex();
-    return div.html();
-}
 
-function groupToText(group) {
-    let s = ''
-    for (const index of group) {
-        s += spanIndexToText[index];
-    }
-    return s;
-}
 
-function initSpanIndexToGroupIndex() {
-    let thisIndex = 0;
-    for (let i = 0; i < groups.length; ++i) {
-        while (thisIndex < groups[i][0]) {
-            spanIndexToGroupIndex.push(-1);
-            ++thisIndex;
-        }
-        for (const j of groups[i]) {
-            spanIndexToGroupIndex.push(i);
-            ++thisIndex;
-        }
-    }
-}
 
 function showNoteInList(word, note = undefined) {
     if (note == undefined) {
@@ -447,41 +330,6 @@ function deleteNoteFromList(word) {
 }
 
 
-function highlightParticles() {
-    for (const group of groups) {
-        let s = groupToText(group);
-        let pid = indexParticle(s);
-        let mainWordEnd = s.length;
-        if (pid > -1) {
-            mainWordEnd = pid;
-            for (let i = pid; i < group.length; ++i) {
-                let span = $("#span-" + String(group[i]));
-                span.addClass("particle");
-            }
-        }
-        let mainWord = s.substring(0, mainWordEnd);
-        if (mainWord.length > 1 && mainWord in HANJA) {
-            for (let i = 0; i < mainWordEnd; ++i) {
-                let span = $("#span-" + String(group[i]));
-                span.addClass("hanja-group");
-            }
-        }
-    }
-}
-
-function selectWholeGroup(spanIndex) {
-    let group = groups[spanIndexToGroupIndex[spanIndex]];
-    let selection = []
-    for (const id of group) {
-        let span = $("#span-" + String(id));
-        if (!span.hasClass('particle')) {
-            selection.push(id);
-        }
-    }
-    selection.sort();
-    selectionRange.left = selection[0];
-    selectionRange.right = selection[selection.length - 1];
-}
 
 
 function copyNotes() {
@@ -497,4 +345,61 @@ function copyNotes() {
     ta.get(0).select()
     document.execCommand('copy')
     ta.remove()
+}
+
+function devideHanja(s) {
+    let devides = _devideHanja(s, 0, s.length);
+    if (devides == undefined || devides.length == 0) {
+        return undefined;
+    }
+    devides = unique(devides);
+    let bestScore = -999999999;
+    let bestDevide = '';
+    for (const devide of devides) {
+        let thisScore = score(devide);
+        if (thisScore > bestScore) {
+            bestScore = thisScore;
+            bestDevide = devide;
+        }
+    }
+    return bestDevide;
+}
+
+function score(devide) {
+    let parts = devide.split(' ');
+    let score = 9999999 / parts.length;
+    let lengths = []
+    for (const part of parts) {
+        lengths.push(part.length)
+    }
+    if (lengths[0] == 1 || lengths[parts.length - 1] == 1) {
+        score += 50;
+    }
+    score -= variance(lengths);
+    return score;
+}
+
+
+function _devideHanja(s, l, r) {
+    let devides = [];
+    // console.log(s.substring(l, r))
+    if (s.substring(l, r) in HANJA || l == r) {
+        devides.push(s.substring(l, r))
+    } else {
+        for (let i = r - 1; i > l; --i) {
+            let devideLeft = _devideHanja(s, l, i);
+            let devideRight = _devideHanja(s, i, r);
+            if (devideLeft != undefined && devideRight != undefined) {
+                for (const dl of devideLeft) {
+                    for (const dr of devideRight) {
+                        devides.push(dl + ' ' + dr);
+                    }
+                }
+            }
+        }
+    }
+    if (devides.length > 0) {
+        return devides
+    }
+    return undefined;
 }

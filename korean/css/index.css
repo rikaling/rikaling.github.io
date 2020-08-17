@@ -6,8 +6,12 @@
     background-color: aliceblue;
 }
 
-.hanja-group {
+.hanja {
     background-color: beige;
+}
+
+.hanja-word{
+    background-color: bisque;
 }
 
 .selected{
