@@ -32,7 +32,7 @@ $(() => {
     })
 
     // $(document).on("click", 'nav#possible-lemmas a.nav-link', (e) => {
-        
+
     // });
 
     $('body').click((e) => {
@@ -70,6 +70,7 @@ $(() => {
     $('#input-word').keypress((e) => {
         if (e.code == 'Enter') {
             e.preventDefault();
+            updateInputWord($('#input-word').val());
             $('#input-note').focus();
         }
     });
@@ -238,7 +239,7 @@ function composeHandler(e) {
     $(e.target).text('Decompose');
 }
 
-function lemmaLinkHandler(e){
+function lemmaLinkHandler(e) {
     e.stopPropagation();
     e.preventDefault();
     let a = $(e.target);
@@ -255,11 +256,17 @@ function showPossibleLemmas() {
     $('#possible-lemmas').empty();
     let word = $('#input-word').val();
     let lemmas = lemmatize(word);
-    for (const lemma of lemmas) {
-        let a = $('<a></a>').attr('href', '#').addClass('nav-link').text(lemma);
-        a.click(lemmaLinkHandler);
-        a.appendTo('#possible-lemmas');
+    if (lemmas.length > 0) {
+        for (const lemma of lemmas) {
+            let a = $('<a></a>').attr('href', '#').addClass('nav-link').text(lemma);
+            a.click(lemmaLinkHandler);
+            a.appendTo('#possible-lemmas');
+            $("#possible-lemmas").show();
+        }
+    } else {
+        $('#possible-lemmas').hide();
     }
+
 }
 
 

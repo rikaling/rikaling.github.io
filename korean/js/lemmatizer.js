@@ -45,7 +45,6 @@ function lemmatizeWord(word) {
     let words = [word];
     let status = { text: words, finished: false };
     if (suf != null) {
-        console.log(suf)
         status = suf.rule(status);
         if (status.finished) {
             return result.concat(status.text)
@@ -152,4 +151,4 @@ function Base2Lemma(base, type = 1) {
     return lemmas;
 }
 
-console.log(lemmatize('퍼'))
+// console.log(lemmatize('갑니다'))

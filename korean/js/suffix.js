@@ -216,7 +216,7 @@ function mndRule(status) {
     let lems = [];
     for (const word of status.text) {
         let stem = removeSuffix(word.substring(0, word.length - 2), 'ㅂ');
-        lems.concat(searchLemmaByBase2(stem))
+        lems = lems.concat(searchLemmaByBase2(stem))
     }
     if (lems.length > 0) {
         return {

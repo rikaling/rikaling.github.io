@@ -35675,7 +35675,16 @@ var lemmas = []
 for (const group of CONJUGATIONS) {
     base1s.push(group.base1)
     base2s.push(group.base2)
-    base3s.push(group.base3)
+    if (group.base3.length > 0) {
+        base3s.push(group.base3);
+        if (group.base3 in base3lemma) {
+            if (!base3lemma[group.base3].includes(group.lemma)) {
+                base3lemma[group.base3].push(group.lemma);
+            }
+        } else {
+            base3lemma[group.base3] = [group.lemma];
+        }
+    }
     lemmas.push(group.lemma)
     if (group.base1 in base1lemma) {
         if (!base1lemma[group.base1].includes(group.lemma)) {
@@ -35691,13 +35700,7 @@ for (const group of CONJUGATIONS) {
     } else {
         base2lemma[group.base2] = [group.lemma];
     }
-    if (group.base3 in base3lemma) {
-        if (!base3lemma[group.base3].includes(group.lemma)) {
-            base3lemma[group.base3].push(group.lemma);
-        }
-    } else {
-        base3lemma[group.base3] = [group.lemma];
-    }
+
 }
 base1s = unique(base1s)
 base2s = unique(base2s)
