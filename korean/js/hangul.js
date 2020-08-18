@@ -20,7 +20,7 @@ const VOWELS = [
 ]
 
 const FINAL_CONSONANTS = [
-    ' ', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ',
+    '', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ',
     'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ',
     'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ',
     'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ',
@@ -59,6 +59,13 @@ function isVowel(c) {
 
 function onlyHangul(s) {
     return /^[가-힣ㄱ-ㅎㅏ-ㅣ]+$/.test(s)
+}
+
+function getFinalConsonant(s) {
+    if (s.length == 0) {
+        return '';
+    }
+    return decompose(s.charAt(length - 1)).finalConsonant;
 }
 
 function compose(cho, jung, jong) {
@@ -133,4 +140,15 @@ function composeString(s) {
     }
     rs.reverse();
     return rs.join('');
+}
+
+function removeSuffix(word, suffix) {
+    let dword = decomposeString(word);
+    let dsuf = decomposeString(suffix);
+    let i = dword.lastIndexOf(dsuf);
+    return composeString(dword.substring(0, i));
+}
+
+function endsWithHangul(s, hangul){
+    return decomposeString(s).endsWith(decomposeString(hangul));
 }

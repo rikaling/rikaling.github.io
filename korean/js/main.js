@@ -82,10 +82,7 @@ $(() => {
     });
 
     $('#input-word').blur((e) => {
-        let input = $(e.target);
-        input.val(input.val().trim());
-        loadNoteInput();
-        showPossibleLemmas();
+        updateInputWord($(e.target).val().trim());
     })
 
     $('#input-file').click((e) => {
@@ -259,8 +256,11 @@ function showPossibleLemmas() {
 }
 
 
-function updateInputWord() {
-    $('#input-word').val(text.selectedText);
+function updateInputWord(word = undefined) {
+    if (word == undefined) {
+        word = text.selectedText;
+    }
+    $('#input-word').val(word);
     showPossibleLemmas();
     loadNoteInput();
 }

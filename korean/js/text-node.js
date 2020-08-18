@@ -173,6 +173,12 @@ class TextNode {
     }
 
     static each(fp, start, end) {
+        if (start == null || end==null){
+            return;
+        }
+        if (start.after(end)){
+            return;
+        }
         let curNode = start;
         while (curNode != end.next) {
             fp(curNode);
@@ -258,12 +264,4 @@ class TextNode {
     get isOther() {
         return !(this.isHangul || this.isBlank || this.isNewline);
     }
-
-
-
-
-
-
-
-
 }

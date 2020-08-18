@@ -113,20 +113,29 @@ class Text {
                 if (curNode.isHangul) {
                     hangulEnd = curNode;
                     let hangulString = TextNode.textInRange(hangulStart, hangulEnd);
-                    let pid = indexParticle(hangulString);
-                    let mainWordEnd = hangulString.length; // test hanja
-                    if (pid > -1) { // ends with particle
-                        mainWordEnd = pid;
+                    if ((curNode.text == '은' || curNode.text == '는') && Particle.check(curNode.text, hangulString)) {
+                        curNode.isParticle = true;
+                        if (curNode.prev.isHangul) {
+                            hangulEnd = curNode.prev;
+                        } else {
+                            hangulEnd = null;
+                        }
+                    }
+                    if (hangulEnd != null) {
+                        hangulString = TextNode.textInRange(hangulStart, hangulEnd);
+                        let pid = Particle.index(hangulString);
                         let particleNode = hangulStart.nextN(pid);
                         TextNode.each((n) => {
                             n.isParticle = true;
                         }, particleNode, hangulEnd);
-                        hangulEnd = particleNode.prev;
-                    }
-                    if (mainWordEnd>1 && hangulString.substring(0, mainWordEnd) in HANJA) {
-                        TextNode.each((n) => {
-                            n.isHanja = true;
-                        }, hangulStart, hangulEnd);
+                        if (particleNode != null) {
+                            hangulEnd = particleNode.prev;
+                        }
+                        if (pid > 1 && hangulString.substring(0, pid) in HANJA) {
+                            TextNode.each((n) => {
+                                n.isHanja = true;
+                            }, hangulStart, hangulEnd);
+                        }
                     }
                 }
                 if (c == '\n') {

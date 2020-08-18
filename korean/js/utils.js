@@ -7,6 +7,14 @@ function lastElement(arr) {
     return undefined;
 }
 
+function copyArray(arr){
+    let newArr = [];
+    for (const e of arr){
+        newArr.push(e);
+    }
+    return newArr;
+}
+
 function isBlank(s) {
     return /^\s+$/.test(s);
 }
@@ -44,4 +52,8 @@ function variance(arr) {
         sumPower += (e - avrg) * (e - avrg);
     }
     return sumPower / arr.length;
+}
+
+function filterVerb(arr){
+    return arr.filter(word => word.endsWith('다'));
 }
