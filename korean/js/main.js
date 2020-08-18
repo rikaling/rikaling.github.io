@@ -31,16 +31,9 @@ $(() => {
         $('#input-word').focus()
     })
 
-    $(document).on("click", 'nav#possible-lemmas a.nav-link', (e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        let a = $(e.target);
-        $('#input-word').val(a.text());
-        loadNoteInput();
-        $('#input-word').focus();
-        a.addClass('disabled');
-        a.siblings().removeClass('disabled');
-    });
+    // $(document).on("click", 'nav#possible-lemmas a.nav-link', (e) => {
+        
+    // });
 
     $('body').click((e) => {
         if (!$(e.target).hasClass('hangul')) {
@@ -82,7 +75,8 @@ $(() => {
     });
 
     $('#input-word').blur((e) => {
-        updateInputWord($(e.target).val().trim());
+        $('#input-word').val($(e.target).val().trim());
+        loadNoteInput();
     })
 
     $('#input-file').click((e) => {
@@ -244,6 +238,17 @@ function composeHandler(e) {
     $(e.target).text('Decompose');
 }
 
+function lemmaLinkHandler(e){
+    e.stopPropagation();
+    e.preventDefault();
+    let a = $(e.target);
+    $('#input-word').val(a.text());
+    loadNoteInput();
+    $('#input-word').focus();
+    a.addClass('disabled');
+    a.siblings().removeClass('disabled');
+}
+
 
 
 function showPossibleLemmas() {
@@ -251,7 +256,9 @@ function showPossibleLemmas() {
     let word = $('#input-word').val();
     let lemmas = lemmatize(word);
     for (const lemma of lemmas) {
-        $('<a></a>').attr('href', '#').addClass('nav-link').text(lemma).appendTo('#possible-lemmas');
+        let a = $('<a></a>').attr('href', '#').addClass('nav-link').text(lemma);
+        a.click(lemmaLinkHandler);
+        a.appendTo('#possible-lemmas');
     }
 }
 

@@ -1,15 +1,39 @@
 function lemmatize(word) {
     let result = lemmatizeWord(word)
+    let lemmas = filterVerb(result);
     if (result.includes(word)) {
-        return filterVerb(searchLemmaByBase3(word).concat(result));
+        lemmas = lemmas.concat(searchLemmaByBase3(word));
     }
-    return filterVerb(result);
+    lemmas.sort((a, b) => {
+        let pa = 1000;
+        let pb = 1000;
+        if (lemmas.includes(a)) {
+            pa = a.length;
+        }
+        if (lemmas.includes(b)) {
+            pb = b.length;
+        }
+        if (pa > 500 & pb > 500) {
+            for (const lemma of lemmas) {
+                if (a.endsWith(lemma)) {
+                    pa += a.length - lemma.length
+                }
+            }
+            for (const lemma of lemmas) {
+                if (b.endsWith(lemma)) {
+                    pb += b.length - lemma.length
+                }
+            }
+        }
+        return pa - pb;
+    })
+    return lemmas;
 }
 
 
 function lemmatizeWord(word) {
     let result = []
-    if (word in lemmas) {
+    if (lemmas.includes(word)) {
         result.push(word);
         return result;
     }
@@ -21,6 +45,7 @@ function lemmatizeWord(word) {
     let words = [word];
     let status = { text: words, finished: false };
     if (suf != null) {
+        console.log(suf)
         status = suf.rule(status);
         if (status.finished) {
             return result.concat(status.text)

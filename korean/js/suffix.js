@@ -2,7 +2,7 @@ class Suffix {
     // 詞尾列表
     static suffixes = [];
     // 規則的第一語基詞尾
-    static base1suffixes = ['겠다', '고', '기', '는', '자', '지', '는다', '소', '겠어','게'];
+    static base1suffixes = ['겠다', '고', '고자', '기', '자', '지', '는다', '소', '겠어', '게'];
     // 暫時沒用
     static base2suffixes = ['나', '니', 'ㄴ', 'ㄹ', 'ㅁ', '시다', '면', '셔'];
     // 規則的第三語基詞尾
@@ -90,7 +90,7 @@ class Suffix {
         Suffix.add(new Suffix('오', base2suffixRule('오')));
         Suffix.add(new Suffix('세요', base2suffixRule('세요')));
         Suffix.add(new Suffix('ㄴ다', base2suffixRule('ㄴ다')));
-        
+
 
         //irregular
         Suffix.add(new Suffix('ㄻ', (status) => {
@@ -152,6 +152,25 @@ class Suffix {
                 finished: true
             };
         })
+
+        Suffix.add(new Suffix('는', (status) => {
+            let lems = []
+            for (const word of status.text) {
+                let base = word.substring(0, word.length - 1)
+                lems = lems.concat(searchLemmaByBase1(base))
+                lems.push(base);
+            }
+            if (lems.length > 0) {
+                return {
+                    text: unique(lems),
+                    finished: false
+                };
+            }
+            return {
+                text: status.text,
+                finished: true
+            };
+        }));
 
         // 語基解釋不了的詞尾
         Suffix.add(new Suffix('습니다', smndRule));
@@ -300,11 +319,16 @@ function base1suffixRule(suf) {
                 let text = removeSuffix(lemma, suf);
                 lems = lems.concat(searchLemmaByBase1(text))
             }
-            let newStatus = {
-                text: unique(lems),
-                finished: false
+            if (lems.length > 0) {
+                return {
+                    text: unique(lems),
+                    finished: false
+                };
+            }
+            return {
+                text: status.text,
+                finished: true
             };
-            return newStatus;
         }
     } else {
         return function (status) {
@@ -313,11 +337,16 @@ function base1suffixRule(suf) {
                 let text = lemma.substring(0, lemma.length - suf.length)
                 lems = lems.concat(searchLemmaByBase1(text))
             }
-            let newStatus = {
-                text: unique(lems),
-                finished: false
+            if (lems.length > 0) {
+                return {
+                    text: unique(lems),
+                    finished: false
+                };
+            }
+            return {
+                text: status.text,
+                finished: true
             };
-            return newStatus;
         }
     }
 }
