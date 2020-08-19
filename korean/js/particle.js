@@ -1,6 +1,6 @@
-const CONSONANT_PARTICLES = ['이라고', '은', '이', '을', '과', '이랑', '으로'];
-const VOWEL_PARTICLES = ['라고', '는', '가', '를', '와', '랑', '로'];
-const BOTH_PARTICLES = ['만', '의', '에', '에게', '한테', '에서',  '도', '부터', '에게서', '하고'];
+const CONSONANT_PARTICLES = ['이라고', '은', '이', '을', '과', '과의','이랑', '으로'];
+const VOWEL_PARTICLES = ['라고', '는', '가', '를', '와','와의', '랑', '로'];
+const BOTH_PARTICLES = ['만', '의', '에', '에게', '한테', '에서', '도', '부터', '에게서', '하고', '조차'];
 const neun = '는';
 
 var particles = CONSONANT_PARTICLES.concat(VOWEL_PARTICLES).concat(BOTH_PARTICLES);
@@ -67,9 +67,9 @@ class Particle {
         return s.length;
     }
 
-    static getParticle(p){
-        for (const particle of Particle.particles){
-            if (particle.word == p){
+    static getParticle(p) {
+        for (const particle of Particle.particles) {
+            if (particle.word == p) {
                 return particle;
             }
         }
@@ -79,7 +79,7 @@ class Particle {
         if (s.endsWith(p)) {
             let pid = s.lastIndexOf(p);
             let particle = Particle.getParticle(p);
-            return particle.after(s.substring(0,pid));
+            return particle.after(s.substring(0, pid));
         } else {
             return false;
         }

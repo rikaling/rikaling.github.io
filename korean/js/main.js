@@ -29,6 +29,7 @@ $(() => {
         e.stopPropagation();
         $(e.target).data('node').click(e.ctrlKey);
         updateInputWord();
+        loadNoteInput();
         $('#input-word').focus()
     })
 

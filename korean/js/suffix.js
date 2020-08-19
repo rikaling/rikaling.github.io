@@ -2,7 +2,7 @@ class Suffix {
     // 詞尾列表
     static suffixes = [];
     // 規則的第一語基詞尾
-    static base1suffixes = ['겠다', '고', '고자', '기', '자', '지', '는다', '소', '겠어', '게'];
+    static base1suffixes = ['겠다', '고', '고자', '기', '자', '지', '는다', '소', '겠어', '게', '던'];
     // 暫時沒用
     static base2suffixes = ['나', '니', 'ㄴ', 'ㄹ', 'ㅁ', '시다', '면', '셔'];
     // 規則的第三語基詞尾
@@ -159,6 +159,10 @@ class Suffix {
                 let base = word.substring(0, word.length - 1)
                 lems = lems.concat(searchLemmaByBase1(base))
                 lems.push(base);
+                if (!hasFinalConsonant(base)) {
+                    base = composeString(decomposeString(base) + 'ㄹ');
+                    lems = lems.concat(searchLemmaByBase1(base))
+                }
             }
             if (lems.length > 0) {
                 return {
@@ -316,8 +320,12 @@ function base1suffixRule(suf) {
         return function (status) {
             let lems = []
             for (const lemma of status.text) {
-                let text = removeSuffix(lemma, suf);
-                lems = lems.concat(searchLemmaByBase1(text))
+                let base = removeSuffix(lemma, suf);
+                lems = lems.concat(searchLemmaByBase1(base))
+                if ((/[ㅅㅂㅇㄴ]/.test(suf.charAt(0)) || /[ㅅㅂㅇㄴ]/.test(decompose(suf.charAt(0)).initialConsonant)) && !hasFinalConsonant(base)) {
+                    base = composeString(decomposeString(base) + 'ㄹ');
+                    lems = lems.concat(searchLemmaByBase1(base))
+                }
             }
             if (lems.length > 0) {
                 return {
@@ -334,8 +342,12 @@ function base1suffixRule(suf) {
         return function (status) {
             let lems = []
             for (const lemma of status.text) {
-                let text = lemma.substring(0, lemma.length - suf.length)
-                lems = lems.concat(searchLemmaByBase1(text))
+                let base = lemma.substring(0, lemma.length - suf.length)
+                lems = lems.concat(searchLemmaByBase1(base))
+                if (/[ㅅㅂㅇㄴ]/.test(decompose(suf.charAt(0)).initialConsonant) && !hasFinalConsonant(base)) {
+                    base = composeString(decomposeString(base) + 'ㄹ');
+                    lems = lems.concat(searchLemmaByBase1(base))
+                }
             }
             if (lems.length > 0) {
                 return {

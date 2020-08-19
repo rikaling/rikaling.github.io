@@ -35662,6 +35662,12 @@ const CONJUGATIONS = [
         "base1": "뵙",
         "base2": "뵈",
         "base3": "봬"
+    },
+    {
+        "lemma":"늦다",
+        "base1":"늦",
+        "base2":"늦으",
+        "base3":"늦어"
     }
 ]
 
