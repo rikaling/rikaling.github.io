@@ -110,7 +110,7 @@ class Text {
                 }
                 curNode = node;
             } else {
-                if (curNode.isHangul) {
+                if (curNode != null && curNode.isHangul) {
                     hangulEnd = curNode;
                     let hangulString = TextNode.textInRange(hangulStart, hangulEnd);
                     if ((curNode.text == '은' || curNode.text == '는') && Particle.check(curNode.text, hangulString)) {
@@ -139,7 +139,7 @@ class Text {
                     }
                 }
                 if (c == '\n') {
-                    if (!curNode.isNewline) {
+                    if (curNode != null && !curNode.isNewline) {
                         let node = new TextNode(c, this, curNode);
                         if (curNode != null) {
                             curNode.next = node;
@@ -147,14 +147,16 @@ class Text {
                         curNode = node;
                     }
                 } else if (isBlank(c)) {
-                    if (curNode.isHangul) {
-                        let node = new TextNode(c, this, curNode);
-                        if (curNode != null) {
-                            curNode.next = node;
+                    if (curNode != null) {
+                        if (curNode.isHangul) {
+                            let node = new TextNode(c, this, curNode);
+                            if (curNode != null) {
+                                curNode.next = node;
+                            }
+                            curNode = node;
+                        } else {
+                            curNode.text += c;
                         }
-                        curNode = node;
-                    } else {
-                        curNode.text += c;
                     }
                 } else {
                     if (curNode != null && !(curNode.isHangul || curNode.isNewline)) {
@@ -172,7 +174,7 @@ class Text {
                 root = curNode;
             }
         }
-        if (curNode.isHangul) {
+        if (curNode != null && curNode.isHangul) {
             hangulEnd = curNode;
             let hangulString = TextNode.textInRange(hangulStart, hangulEnd);
             let pid = indexParticle(hangulString);

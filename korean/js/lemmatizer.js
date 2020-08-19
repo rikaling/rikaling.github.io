@@ -1,10 +1,10 @@
 function lemmatize(word) {
     let result = lemmatizeWord(word)
-    let lemmas = filterVerb(result);
+    let lems = filterVerb(result);
     if (result.includes(word)) {
-        lemmas = lemmas.concat(searchLemmaByBase3(word));
+        lems = lems.concat(searchLemmaByBase3(word));
     }
-    lemmas.sort((a, b) => {
+    lems.sort((a, b) => {
         let pa = 1000;
         let pb = 1000;
         if (lemmas.includes(a)) {
@@ -27,7 +27,18 @@ function lemmatize(word) {
         }
         return pa - pb;
     })
-    return lemmas;
+    let results = []
+    for (const lem of lems){
+        let exact = false;
+        if (lemmas.includes(lem)){
+            exact = true;
+        }
+        results.push({
+            exactMatch: exact,
+            lemma: lem
+        });
+    }
+    return results;
 }
 
 

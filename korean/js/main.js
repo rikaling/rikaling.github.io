@@ -20,6 +20,7 @@ $(() => {
     $('#btn-parse').click((e) => {
         e.stopPropagation();
         e.preventDefault();
+        $('#text-parsed').empty();
         text = new Text($('#input-text').val());
         text.generateHtml($('#text-parsed'));
     })
@@ -258,10 +259,13 @@ function showPossibleLemmas() {
     let lemmas = lemmatize(word);
     if (lemmas.length > 0) {
         for (const lemma of lemmas) {
-            let a = $('<a></a>').attr('href', '#').addClass('nav-link').text(lemma);
+            let a = $('<a></a>').attr('href', '#').addClass('nav-link').text(lemma.lemma);
+            if (lemma.exactMatch){
+                a.addClass('font-weight-bold');
+            }
             a.click(lemmaLinkHandler);
             a.appendTo('#possible-lemmas');
-            $("#possible-lemmas").show();
+            $("#possible-lemmas").removeClass('d-none').show();
         }
     } else {
         $('#possible-lemmas').hide();

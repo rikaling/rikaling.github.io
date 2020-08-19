@@ -7,9 +7,9 @@ function lastElement(arr) {
     return undefined;
 }
 
-function copyArray(arr){
+function copyArray(arr) {
     let newArr = [];
-    for (const e of arr){
+    for (const e of arr) {
         newArr.push(e);
     }
     return newArr;
@@ -34,7 +34,6 @@ function unique(arr) {
     return uarr;
 }
 
-
 function sum(arr) {
     return arr.reduce((a, b) => {
         return a + b;
@@ -54,6 +53,6 @@ function variance(arr) {
     return sumPower / arr.length;
 }
 
-function filterVerb(arr){
+function filterVerb(arr) {
     return arr.filter(word => word.endsWith('다'));
 }
