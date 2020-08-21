@@ -1,0 +1,212 @@
+lieben
+lieb 0111111
+
+
+
+werden
+werd  0110101
+wurde 1011100
+würde 1011100
+wir   0001000
+wird  1000000
+
+haben
+hab   0110101
+hatte 1011100
+hätte 1011100
+ha    0011000
+
+können
+kann 1001000
+konn 0000010
+könn 0010111
+
+dürfen
+darf 1001000
+durf 0000010
+dürf 0010111
+
+werden ~= haben
+können = dürfen
+
+
+laden
+lad 0110101
+läd 0011000
+lud 1011100
+lüd 0000001
+
+gehen
+geh  0111101
+ging 1011101
+
+fallen
+fall 0110101
+fäll 0011000
+fiel 1011101
+
+
+
+bleiben 1
+bleib 0111101
+blieb 1011101
+
+fliegen 2
+flieg 0111101
+flog  1011100
+flög  0000001
+
+finden 3
+find 0111101
+fand 1011100
+fänd 0000001
+
+kommen 4
+komm 0111101
+kam  1011100
+käm  0000001
+
+geben 5
+geb 0110101
+gib 0011000
+gab 1011100
+gäb 0000001
+
+fahren 6
+fahr 0110101
+fähr 0011000
+fuhr 1011100
+führ 0000001
+
+fallen 7
+fall 0110101
+fäll 0011000
+fiel 1011101
+
+gehen 7
+geh  0111101
+ging 1011101
+
+Weak   0111111
+Strong 1111101
+Modal  1011111
+Irregular
+
+
+fahren = laden
+ging = fiel = kam | käm = lud | lüd
+geh = komm = fall | fäll = lad | läd
+
+A & B = 0
+A & E = 0
+E = 1 => C = 1
+B = 1 => C = E = F = 1
+
+
+sollen
+soll 1011111
+
+wollen
+will 1001000
+woll 0010111
+
+müssen
+muss 1001010
+müss 0010111
+
+können
+kann 1001000
+konn 0000010
+könn 0010111
+
+dürfen
+darf 1001000
+durf 0000010
+dürf 0010111
+
+mögen
+mag  1001000
+moch 0000010
+mög  0010101
+
+wissen
+weiß 1001000
+wiss 0010101
+wuss 0000010
+wüss 0000010
+
+1001000
+0000010
+0000010
+0010101
+
+sollen: 1234
+wollen: 1|234
+müssen: 12|34
+können, dürfen: 1|2|34
+mögen: 1|23|4
+
+
+soll = will | woll = muss | müss = kann | konn | könn = darf | durf | dürf = mag | moch | mög
+will = kann = mag
+
+können = dürfen
+
+kennen
+kenn 0111111
+kann 0000010
+
+bringen
+bring 0111101
+brach 0000010
+bräch 0000010
+
+dünken
+dünk  0111111
+deuch 0000010
+
+stehen
+steh 0111101
+stand 1011100
+ständ 0000001
+
+laden
+lad 0110101
+läd 0011000
+lud 1011100
+lüd 0000001
+
+
+senden
+send 0111111
+sand 0000010
+
+
+Strong
+1111101
+0110101
+0011000
+1011100
+0000001
+
+Modal
+1011111
+1001000
+0000010
+0000010
+0010101
+
+Weak/Mix
+0111111
+0111101
+0000010
+0000010
+-------
+
+
+bi 0001100
+is 0010000
+sind
+sei 1010010
+war 1011100
+wär 0000010

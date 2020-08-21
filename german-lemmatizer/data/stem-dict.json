@@ -1,0 +1,5286 @@
+{
+  "backen": {
+    "stems": [
+      "back",
+      "buk",
+      "bäck",
+      "bük"
+    ],
+    "pastParticle": "gebacken"
+  },
+  "bedingen": {
+    "stems": [
+      "bedang",
+      "beding",
+      "bedäng"
+    ],
+    "pastParticle": "bedungen"
+  },
+  "befehlen": {
+    "stems": [
+      "befahl",
+      "befehl",
+      "befiehl",
+      "befähl",
+      "beföhl"
+    ],
+    "pastParticle": "befohlen"
+  },
+  "begeben": {
+    "stems": [
+      "begab",
+      "begeb",
+      "begib",
+      "begäb"
+    ],
+    "pastParticle": "begeben"
+  },
+  "behalten": {
+    "stems": [
+      "behalt",
+      "behielt",
+      "behält"
+    ],
+    "pastParticle": "behalten"
+  },
+  "beißen": {
+    "stems": [
+      "beiß",
+      "biss"
+    ],
+    "pastParticle": "gebissen"
+  },
+  "bekommen": {
+    "stems": [
+      "bekam",
+      "bekomm",
+      "bekäm"
+    ],
+    "pastParticle": "bekommen"
+  },
+  "bergen": {
+    "stems": [
+      "barg",
+      "berg",
+      "birg",
+      "bärg"
+    ],
+    "pastParticle": "geborgen"
+  },
+  "bersten": {
+    "stems": [
+      "barst",
+      "berst",
+      "birst",
+      "bärst"
+    ],
+    "pastParticle": "geborsten"
+  },
+  "berufen": {
+    "stems": [
+      "berief",
+      "beruf"
+    ],
+    "pastParticle": "berufen"
+  },
+  "biegen": {
+    "stems": [
+      "bieg",
+      "bog",
+      "bög"
+    ],
+    "pastParticle": "gebogen"
+  },
+  "bieten": {
+    "stems": [
+      "biet",
+      "bot",
+      "böt"
+    ],
+    "pastParticle": "geboten"
+  },
+  "binden": {
+    "stems": [
+      "band",
+      "bind",
+      "bänd"
+    ],
+    "pastParticle": "gebunden"
+  },
+  "bitten": {
+    "stems": [
+      "bat",
+      "bitt",
+      "bät"
+    ],
+    "pastParticle": "gebeten"
+  },
+  "blasen": {
+    "stems": [
+      "blas",
+      "blies",
+      "bläs"
+    ],
+    "pastParticle": "geblasen"
+  },
+  "bleiben": {
+    "stems": [
+      "bleib",
+      "blieb"
+    ],
+    "pastParticle": "geblieben"
+  },
+  "braten": {
+    "stems": [
+      "brat",
+      "briet",
+      "brät"
+    ],
+    "pastParticle": "gebraten"
+  },
+  "brechen": {
+    "stems": [
+      "brach",
+      "brech",
+      "brich",
+      "bräch"
+    ],
+    "pastParticle": "gebrochen"
+  },
+  "brennen": {
+    "stems": [
+      "brann",
+      "brenn"
+    ],
+    "pastParticle": "gebrannt"
+  },
+  "bringen": {
+    "stems": [
+      "brach",
+      "bring",
+      "bräch"
+    ],
+    "pastParticle": "gebracht"
+  },
+  "dingen": {
+    "stems": [
+      "dang",
+      "ding",
+      "däng"
+    ],
+    "pastParticle": "gedungen"
+  },
+  "dreschen": {
+    "stems": [
+      "dresch",
+      "drisch",
+      "drosch",
+      "drösch"
+    ],
+    "pastParticle": "gedroschen"
+  },
+  "erkennen": {
+    "stems": [
+      "erkann",
+      "erkenn"
+    ],
+    "pastParticle": "erkannt"
+  },
+  "erziehen": {
+    "stems": [
+      "erzieh",
+      "erzog",
+      "erzög"
+    ],
+    "pastParticle": "erzogen"
+  },
+  "essen": {
+    "stems": [
+      "aß",
+      "ess",
+      "iss",
+      "äß"
+    ],
+    "pastParticle": "gegessen"
+  },
+  "fahren": {
+    "stems": [
+      "fahr",
+      "fuhr",
+      "fähr",
+      "führ"
+    ],
+    "pastParticle": "gefahren"
+  },
+  "fallen": {
+    "stems": [
+      "fall",
+      "fiel",
+      "fäll"
+    ],
+    "pastParticle": "gefallen"
+  },
+  "fangen": {
+    "stems": [
+      "fang",
+      "fing",
+      "fäng"
+    ],
+    "pastParticle": "gefangen"
+  },
+  "finden": {
+    "stems": [
+      "fand",
+      "find",
+      "fänd"
+    ],
+    "pastParticle": "gefunden"
+  },
+  "fliegen": {
+    "stems": [
+      "flieg",
+      "flog",
+      "flög"
+    ],
+    "pastParticle": "geflogen"
+  },
+  "fließen": {
+    "stems": [
+      "fließ",
+      "floss",
+      "flöss"
+    ],
+    "pastParticle": "geflossen"
+  },
+  "fressen": {
+    "stems": [
+      "fraß",
+      "fress",
+      "friss",
+      "fräß"
+    ],
+    "pastParticle": "gefressen"
+  },
+  "frieren": {
+    "stems": [
+      "frier",
+      "fror",
+      "frör"
+    ],
+    "pastParticle": "gefroren"
+  },
+  "geben": {
+    "stems": [
+      "gab",
+      "geb",
+      "gib",
+      "gäb"
+    ],
+    "pastParticle": "gegeben"
+  },
+  "gehen": {
+    "stems": [
+      "geh",
+      "ging"
+    ],
+    "pastParticle": "gegangen"
+  },
+  "geraten": {
+    "stems": [
+      "gerat",
+      "geriet",
+      "gerät"
+    ],
+    "pastParticle": "geraten"
+  },
+  "gewinnen": {
+    "stems": [
+      "gewann",
+      "gewinn",
+      "gewänn",
+      "gewönn"
+    ],
+    "pastParticle": "gewonnen"
+  },
+  "gießen": {
+    "stems": [
+      "gieß",
+      "goss",
+      "göss"
+    ],
+    "pastParticle": "gegossen"
+  },
+  "gleiten": {
+    "stems": [
+      "gleit",
+      "glitt"
+    ],
+    "pastParticle": "geglitten"
+  },
+  "greifen": {
+    "stems": [
+      "greif",
+      "griff"
+    ],
+    "pastParticle": "gegriffen"
+  },
+  "halten": {
+    "stems": [
+      "halt",
+      "hielt",
+      "hält"
+    ],
+    "pastParticle": "gehalten"
+  },
+  "kommen": {
+    "stems": [
+      "kam",
+      "komm",
+      "käm"
+    ],
+    "pastParticle": "gekommen"
+  },
+  "hauen": {
+    "stems": [
+      "hau",
+      "hieb"
+    ],
+    "pastParticle": "gehauen"
+  },
+  "heben": {
+    "stems": [
+      "heb",
+      "hob",
+      "hub",
+      "höb",
+      "hüb"
+    ],
+    "pastParticle": "gehoben"
+  },
+  "helfen": {
+    "stems": [
+      "half",
+      "helf",
+      "hilf",
+      "hälf",
+      "hülf"
+    ],
+    "pastParticle": "geholfen"
+  },
+  "kneifen": {
+    "stems": [
+      "kneif",
+      "kniff"
+    ],
+    "pastParticle": "gekniffen"
+  },
+  "können": {
+    "stems": [
+      "kann",
+      "konn",
+      "könn"
+    ],
+    "pastParticle": "gekonnt"
+  },
+  "laden": {
+    "stems": [
+      "lad",
+      "lud",
+      "läd",
+      "lüd"
+    ],
+    "pastParticle": "geladen"
+  },
+  "lassen": {
+    "stems": [
+      "lass",
+      "ließ",
+      "läss"
+    ],
+    "pastParticle": "gelassen"
+  },
+  "laufen": {
+    "stems": [
+      "lauf",
+      "lief",
+      "läuf"
+    ],
+    "pastParticle": "gelaufen"
+  },
+  "lesen": {
+    "stems": [
+      "las",
+      "les",
+      "lies",
+      "läs"
+    ],
+    "pastParticle": "gelesen"
+  },
+  "messen": {
+    "stems": [
+      "maß",
+      "mess",
+      "miss",
+      "mäß"
+    ],
+    "pastParticle": "gemessen"
+  },
+  "nehmen": {
+    "stems": [
+      "nahm",
+      "nehm",
+      "nimm",
+      "nähm"
+    ],
+    "pastParticle": "genommen"
+  },
+  "pfeifen": {
+    "stems": [
+      "pfeif",
+      "pfiff"
+    ],
+    "pastParticle": "gepfiffen"
+  },
+  "raten": {
+    "stems": [
+      "rat",
+      "riet",
+      "rät"
+    ],
+    "pastParticle": "geraten"
+  },
+  "reiben": {
+    "stems": [
+      "reib",
+      "rieb"
+    ],
+    "pastParticle": "gerieben"
+  },
+  "reißen": {
+    "stems": [
+      "reiß",
+      "riss"
+    ],
+    "pastParticle": "gerissen"
+  },
+  "rennen": {
+    "stems": [
+      "rann",
+      "renn"
+    ],
+    "pastParticle": "gerannt"
+  },
+  "ringen": {
+    "stems": [
+      "rang",
+      "ring",
+      "räng"
+    ],
+    "pastParticle": "gerungen"
+  },
+  "rufen": {
+    "stems": [
+      "rief",
+      "ruf"
+    ],
+    "pastParticle": "gerufen"
+  },
+  "saugen": {
+    "stems": [
+      "saug",
+      "sog",
+      "sög"
+    ],
+    "pastParticle": "gesogen"
+  },
+  "scheiden": {
+    "stems": [
+      "scheid",
+      "schied"
+    ],
+    "pastParticle": "geschieden"
+  },
+  "schieben": {
+    "stems": [
+      "schieb",
+      "schob",
+      "schöb"
+    ],
+    "pastParticle": "geschoben"
+  },
+  "schießen": {
+    "stems": [
+      "schieß",
+      "schoss",
+      "schöss"
+    ],
+    "pastParticle": "geschossen"
+  },
+  "schlagen": {
+    "stems": [
+      "schlag",
+      "schlug",
+      "schläg",
+      "schlüg"
+    ],
+    "pastParticle": "geschlagen"
+  },
+  "schließen": {
+    "stems": [
+      "schließ",
+      "schloss",
+      "schlöss"
+    ],
+    "pastParticle": "geschlossen"
+  },
+  "schmeißen": {
+    "stems": [
+      "schmeiß",
+      "schmiss"
+    ],
+    "pastParticle": "geschmissen"
+  },
+  "schneiden": {
+    "stems": [
+      "schneid",
+      "schnitt"
+    ],
+    "pastParticle": "geschnitten"
+  },
+  "schreiben": {
+    "stems": [
+      "schreib",
+      "schrieb"
+    ],
+    "pastParticle": "geschrieben"
+  },
+  "schwellen": {
+    "stems": [
+      "schwell",
+      "schwill",
+      "schwoll",
+      "schwöll"
+    ],
+    "pastParticle": "geschwollen"
+  },
+  "schwimmen": {
+    "stems": [
+      "schwamm",
+      "schwimm",
+      "schwomm",
+      "schwämm",
+      "schwömm"
+    ],
+    "pastParticle": "geschwommen"
+  },
+  "schwören": {
+    "stems": [
+      "schwor",
+      "schwur",
+      "schwör",
+      "schwür"
+    ],
+    "pastParticle": "geschworen"
+  },
+  "sehen": {
+    "stems": [
+      "sah",
+      "seh",
+      "sieh",
+      "säh"
+    ],
+    "pastParticle": "gesehen"
+  },
+  "senden": {
+    "stems": [
+      "sand",
+      "send"
+    ],
+    "pastParticle": "gesandt"
+  },
+  "spinnen": {
+    "stems": [
+      "spann",
+      "spinn",
+      "spänn",
+      "spönn"
+    ],
+    "pastParticle": "gesponnen"
+  },
+  "sprechen": {
+    "stems": [
+      "sprach",
+      "sprech",
+      "sprich",
+      "spräch"
+    ],
+    "pastParticle": "gesprochen"
+  },
+  "springen": {
+    "stems": [
+      "sprang",
+      "spring",
+      "spräng"
+    ],
+    "pastParticle": "gesprungen"
+  },
+  "steigen": {
+    "stems": [
+      "steig",
+      "stieg"
+    ],
+    "pastParticle": "gestiegen"
+  },
+  "sterben": {
+    "stems": [
+      "starb",
+      "sterb",
+      "stirb",
+      "stürb"
+    ],
+    "pastParticle": "gestorben"
+  },
+  "stoßen": {
+    "stems": [
+      "stieß",
+      "stoß",
+      "stöß"
+    ],
+    "pastParticle": "gestoßen"
+  },
+  "streiten": {
+    "stems": [
+      "streit",
+      "stritt"
+    ],
+    "pastParticle": "gestritten"
+  },
+  "tragen": {
+    "stems": [
+      "trag",
+      "trug",
+      "träg",
+      "trüg"
+    ],
+    "pastParticle": "getragen"
+  },
+  "treiben": {
+    "stems": [
+      "treib",
+      "trieb"
+    ],
+    "pastParticle": "getrieben"
+  },
+  "treten": {
+    "stems": [
+      "trat",
+      "tret",
+      "tritt",
+      "trät"
+    ],
+    "pastParticle": "getreten"
+  },
+  "tun": {
+    "stems": [
+      "tat",
+      "tu",
+      "tät"
+    ],
+    "pastParticle": "getan"
+  },
+  "waschen": {
+    "stems": [
+      "wasch",
+      "wusch",
+      "wäsch",
+      "wüsch"
+    ],
+    "pastParticle": "gewaschen"
+  },
+  "weichen": {
+    "stems": [
+      "weich",
+      "wich"
+    ],
+    "pastParticle": "gewichen"
+  },
+  "weisen": {
+    "stems": [
+      "weis",
+      "wies"
+    ],
+    "pastParticle": "gewiesen"
+  },
+  "wenden": {
+    "stems": [
+      "wand",
+      "wend"
+    ],
+    "pastParticle": "gewandt"
+  },
+  "werfen": {
+    "stems": [
+      "warf",
+      "werf",
+      "wirf",
+      "würf"
+    ],
+    "pastParticle": "geworfen"
+  },
+  "wiegen": {
+    "stems": [
+      "wieg",
+      "wog",
+      "wög"
+    ],
+    "pastParticle": "gewogen"
+  },
+  "wägen": {
+    "stems": [
+      "wog",
+      "wäg",
+      "wög"
+    ],
+    "pastParticle": "gewogen"
+  },
+  "ziehen": {
+    "stems": [
+      "zieh",
+      "zog",
+      "zög"
+    ],
+    "pastParticle": "gezogen"
+  },
+  "stehen": {
+    "stems": [
+      "stand",
+      "steh",
+      "ständ",
+      "stünd"
+    ],
+    "pastParticle": "gestanden"
+  },
+  "denken": {
+    "stems": [
+      "dach",
+      "denk",
+      "däch"
+    ],
+    "pastParticle": "gedacht"
+  },
+  "empfinden": {
+    "stems": [
+      "empfand",
+      "empfind",
+      "empfänd"
+    ],
+    "pastParticle": "empfunden"
+  },
+  "anerbieten": {
+    "stems": [
+      "anerbiet",
+      "anerbot",
+      "anerböt"
+    ],
+    "pastParticle": "anerboten"
+  },
+  "fechten": {
+    "stems": [
+      "fecht",
+      "ficht",
+      "focht",
+      "föcht"
+    ],
+    "pastParticle": "gefochten"
+  },
+  "fliehen": {
+    "stems": [
+      "flieh",
+      "floh",
+      "flöh"
+    ],
+    "pastParticle": "geflohen"
+  },
+  "gleichen": {
+    "stems": [
+      "gleich",
+      "glich"
+    ],
+    "pastParticle": "geglichen"
+  },
+  "haben": {
+    "stems": [
+      "ha",
+      "hab",
+      "hat",
+      "hät"
+    ],
+    "pastParticle": "gehabt"
+  },
+  "hängen": {
+    "stems": [
+      "hing",
+      "häng"
+    ],
+    "pastParticle": "gehangen"
+  },
+  "kennen": {
+    "stems": [
+      "kann",
+      "kenn"
+    ],
+    "pastParticle": "gekannt"
+  },
+  "klingen": {
+    "stems": [
+      "klang",
+      "kling",
+      "kläng"
+    ],
+    "pastParticle": "geklungen"
+  },
+  "kriechen": {
+    "stems": [
+      "kriech",
+      "kroch",
+      "kröch"
+    ],
+    "pastParticle": "gekrochen"
+  },
+  "liegen": {
+    "stems": [
+      "lag",
+      "lieg",
+      "läg"
+    ],
+    "pastParticle": "gelegen"
+  },
+  "lügen": {
+    "stems": [
+      "log",
+      "lög",
+      "lüg"
+    ],
+    "pastParticle": "gelogen"
+  },
+  "reihen": {
+    "stems": [
+      "reih",
+      "rieh"
+    ],
+    "pastParticle": "geriehen"
+  },
+  "riechen": {
+    "stems": [
+      "riech",
+      "roch",
+      "röch"
+    ],
+    "pastParticle": "gerochen"
+  },
+  "scheißen": {
+    "stems": [
+      "scheiß",
+      "schiss"
+    ],
+    "pastParticle": "geschissen"
+  },
+  "schleichen": {
+    "stems": [
+      "schleich",
+      "schlich"
+    ],
+    "pastParticle": "geschlichen"
+  },
+  "schreien": {
+    "stems": [
+      "schrei",
+      "schri",
+      "schrie"
+    ],
+    "pastParticle": "geschrien"
+  },
+  "sitzen": {
+    "stems": [
+      "saß",
+      "sitz",
+      "säß"
+    ],
+    "pastParticle": "gesessen"
+  },
+  "speien": {
+    "stems": [
+      "spei",
+      "spi",
+      "spie"
+    ],
+    "pastParticle": "gespien"
+  },
+  "stechen": {
+    "stems": [
+      "stach",
+      "stech",
+      "stich",
+      "stäch"
+    ],
+    "pastParticle": "gestochen"
+  },
+  "stinken": {
+    "stems": [
+      "stank",
+      "stink",
+      "stänk"
+    ],
+    "pastParticle": "gestunken"
+  },
+  "streichen": {
+    "stems": [
+      "streich",
+      "strich"
+    ],
+    "pastParticle": "gestrichen"
+  },
+  "treffen": {
+    "stems": [
+      "traf",
+      "treff",
+      "triff",
+      "träf"
+    ],
+    "pastParticle": "getroffen"
+  },
+  "trinken": {
+    "stems": [
+      "trank",
+      "trink",
+      "tränk"
+    ],
+    "pastParticle": "getrunken"
+  },
+  "wachsen": {
+    "stems": [
+      "wachs",
+      "wuchs",
+      "wächs",
+      "wüchs"
+    ],
+    "pastParticle": "gewachsen"
+  },
+  "werben": {
+    "stems": [
+      "warb",
+      "werb",
+      "wirb",
+      "würb"
+    ],
+    "pastParticle": "geworben"
+  },
+  "auferstehen": {
+    "stems": [
+      "auferstand",
+      "aufersteh",
+      "auferständ",
+      "auferstünd"
+    ],
+    "pastParticle": "auferstanden"
+  },
+  "erhalten": {
+    "stems": [
+      "erhalt",
+      "erhielt",
+      "erhält"
+    ],
+    "pastParticle": "erhalten"
+  },
+  "scheinen": {
+    "stems": [
+      "schein",
+      "schien"
+    ],
+    "pastParticle": "geschienen"
+  },
+  "zwingen": {
+    "stems": [
+      "zwang",
+      "zwing",
+      "zwäng"
+    ],
+    "pastParticle": "gezwungen"
+  },
+  "dringen": {
+    "stems": [
+      "drang",
+      "dring",
+      "dräng"
+    ],
+    "pastParticle": "gedrungen"
+  },
+  "erkiesen": {
+    "stems": [
+      "erkies",
+      "erkor",
+      "erkör"
+    ],
+    "pastParticle": "erkoren"
+  },
+  "graben": {
+    "stems": [
+      "grab",
+      "grub",
+      "gräb",
+      "grüb"
+    ],
+    "pastParticle": "gegraben"
+  },
+  "leihen": {
+    "stems": [
+      "leih",
+      "lieh"
+    ],
+    "pastParticle": "geliehen"
+  },
+  "löschen": {
+    "stems": [
+      "lisch",
+      "losch",
+      "lösch"
+    ],
+    "pastParticle": "geloschen"
+  },
+  "schaffen": {
+    "stems": [
+      "schaff",
+      "schuf",
+      "schüf"
+    ],
+    "pastParticle": "geschaffen"
+  },
+  "schlafen": {
+    "stems": [
+      "schlaf",
+      "schlief",
+      "schläf"
+    ],
+    "pastParticle": "geschlafen"
+  },
+  "wringen": {
+    "stems": [
+      "wrang",
+      "wring",
+      "wräng"
+    ],
+    "pastParticle": "gewrungen"
+  },
+  "bedenken": {
+    "stems": [
+      "bedach",
+      "bedenk",
+      "bedäch"
+    ],
+    "pastParticle": "bedacht"
+  },
+  "bedürfen": {
+    "stems": [
+      "bedarf",
+      "bedurf",
+      "bedürf"
+    ],
+    "pastParticle": "bedurft"
+  },
+  "befahren": {
+    "stems": [
+      "befahr",
+      "befuhr",
+      "befähr",
+      "beführ"
+    ],
+    "pastParticle": "befahren"
+  },
+  "befallen": {
+    "stems": [
+      "befall",
+      "befiel",
+      "befäll"
+    ],
+    "pastParticle": "befallen"
+  },
+  "befangen": {
+    "stems": [
+      "befang",
+      "befing",
+      "befäng"
+    ],
+    "pastParticle": "befangen"
+  },
+  "befinden": {
+    "stems": [
+      "befand",
+      "befind",
+      "befänd"
+    ],
+    "pastParticle": "befunden"
+  },
+  "befleißen": {
+    "stems": [
+      "befleiß",
+      "befliss"
+    ],
+    "pastParticle": "beflissen"
+  },
+  "befliegen": {
+    "stems": [
+      "beflieg",
+      "beflog",
+      "beflög"
+    ],
+    "pastParticle": "beflogen"
+  },
+  "begehen": {
+    "stems": [
+      "begeh",
+      "beging"
+    ],
+    "pastParticle": "begangen"
+  },
+  "begießen": {
+    "stems": [
+      "begieß",
+      "begoss",
+      "begöss"
+    ],
+    "pastParticle": "begossen"
+  },
+  "beginnen": {
+    "stems": [
+      "begann",
+      "beginn",
+      "begänn",
+      "begönn"
+    ],
+    "pastParticle": "begonnen"
+  },
+  "begleichen": {
+    "stems": [
+      "begleich",
+      "beglich"
+    ],
+    "pastParticle": "beglichen"
+  },
+  "begraben": {
+    "stems": [
+      "begrab",
+      "begrub",
+      "begräb",
+      "begrüb"
+    ],
+    "pastParticle": "begraben"
+  },
+  "begreifen": {
+    "stems": [
+      "begreif",
+      "begriff"
+    ],
+    "pastParticle": "begriffen"
+  },
+  "beheben": {
+    "stems": [
+      "beheb",
+      "behob",
+      "behub",
+      "behöb",
+      "behüb"
+    ],
+    "pastParticle": "behoben"
+  },
+  "behelfen": {
+    "stems": [
+      "behalf",
+      "behelf",
+      "behilf",
+      "behälf",
+      "behülf"
+    ],
+    "pastParticle": "beholfen"
+  },
+  "werden": {
+    "stems": [
+      "ward",
+      "werd",
+      "wir",
+      "wurde",
+      "würd",
+      "wird"
+    ],
+    "pastParticle": "geworden"
+  },
+  "bekennen": {
+    "stems": [
+      "bekann",
+      "bekenn"
+    ],
+    "pastParticle": "bekannt"
+  },
+  "beklimmen": {
+    "stems": [
+      "beklimm",
+      "beklomm",
+      "beklömm"
+    ],
+    "pastParticle": "beklommen"
+  },
+  "bekneifen": {
+    "stems": [
+      "bekneif",
+      "bekniff"
+    ],
+    "pastParticle": "bekniffen"
+  },
+  "bekriechen": {
+    "stems": [
+      "bekriech",
+      "bekroch",
+      "bekröch"
+    ],
+    "pastParticle": "bekrochen"
+  },
+  "beladen": {
+    "stems": [
+      "belad",
+      "belud",
+      "beläd",
+      "belüd"
+    ],
+    "pastParticle": "beladen"
+  },
+  "belassen": {
+    "stems": [
+      "belass",
+      "beließ",
+      "beläss"
+    ],
+    "pastParticle": "belassen"
+  },
+  "belaufen": {
+    "stems": [
+      "belauf",
+      "belief",
+      "beläuf"
+    ],
+    "pastParticle": "belaufen"
+  },
+  "beleihen": {
+    "stems": [
+      "beleih",
+      "belieh"
+    ],
+    "pastParticle": "beliehen"
+  },
+  "belügen": {
+    "stems": [
+      "belog",
+      "belög",
+      "belüg"
+    ],
+    "pastParticle": "belogen"
+  },
+  "bemessen": {
+    "stems": [
+      "bemaß",
+      "bemess",
+      "bemiss",
+      "bemäß"
+    ],
+    "pastParticle": "bemessen"
+  },
+  "benehmen": {
+    "stems": [
+      "benahm",
+      "benehm",
+      "benimm",
+      "benähm"
+    ],
+    "pastParticle": "benommen"
+  },
+  "benennen": {
+    "stems": [
+      "benann",
+      "benenn"
+    ],
+    "pastParticle": "benannt"
+  },
+  "beraten": {
+    "stems": [
+      "berat",
+      "beriet",
+      "berät"
+    ],
+    "pastParticle": "beraten"
+  },
+  "bereiten": {
+    "stems": [
+      "bereit",
+      "beritt"
+    ],
+    "pastParticle": "beritten"
+  },
+  "berennen": {
+    "stems": [
+      "berann",
+      "berenn"
+    ],
+    "pastParticle": "berannt"
+  },
+  "bergsteigen": {
+    "stems": [
+      "bergsteig",
+      "bergstieg"
+    ],
+    "pastParticle": "berggestiegen"
+  },
+  "beriechen": {
+    "stems": [
+      "beriech",
+      "beroch",
+      "beröch"
+    ],
+    "pastParticle": "berochen"
+  },
+  "besaufen": {
+    "stems": [
+      "besauf",
+      "besoff",
+      "besäuf",
+      "besöff"
+    ],
+    "pastParticle": "besoffen"
+  },
+  "bescheiden": {
+    "stems": [
+      "bescheid",
+      "beschied"
+    ],
+    "pastParticle": "beschieden"
+  },
+  "bescheinen": {
+    "stems": [
+      "beschein",
+      "beschien"
+    ],
+    "pastParticle": "beschienen"
+  },
+  "bescheißen": {
+    "stems": [
+      "bescheiß",
+      "beschiss"
+    ],
+    "pastParticle": "beschissen"
+  },
+  "bescheren": {
+    "stems": [
+      "bescher",
+      "beschor",
+      "beschör"
+    ],
+    "pastParticle": "beschoren"
+  },
+  "beschießen": {
+    "stems": [
+      "beschieß",
+      "beschoss",
+      "beschöss"
+    ],
+    "pastParticle": "beschossen"
+  },
+  "beschlafen": {
+    "stems": [
+      "beschlaf",
+      "beschlief",
+      "beschläf"
+    ],
+    "pastParticle": "beschlafen"
+  },
+  "beschlagen": {
+    "stems": [
+      "beschlag",
+      "beschlug",
+      "beschläg",
+      "beschlüg"
+    ],
+    "pastParticle": "beschlagen"
+  },
+  "beschleichen": {
+    "stems": [
+      "beschleich",
+      "beschlich"
+    ],
+    "pastParticle": "beschlichen"
+  },
+  "beschließen": {
+    "stems": [
+      "beschließ",
+      "beschloss",
+      "beschlöss"
+    ],
+    "pastParticle": "beschlossen"
+  },
+  "beschmeißen": {
+    "stems": [
+      "beschmeiß",
+      "beschmiss"
+    ],
+    "pastParticle": "beschmissen"
+  },
+  "beschneiden": {
+    "stems": [
+      "beschneid",
+      "beschnitt"
+    ],
+    "pastParticle": "beschnitten"
+  },
+  "beschreiben": {
+    "stems": [
+      "beschreib",
+      "beschrieb"
+    ],
+    "pastParticle": "beschrieben"
+  },
+  "beschreien": {
+    "stems": [
+      "beschrei",
+      "beschri",
+      "beschrie"
+    ],
+    "pastParticle": "beschrien"
+  },
+  "beschweigen": {
+    "stems": [
+      "beschweig",
+      "beschwieg"
+    ],
+    "pastParticle": "beschwiegen"
+  },
+  "beschwören": {
+    "stems": [
+      "beschwor",
+      "beschwur",
+      "beschwör",
+      "beschwür"
+    ],
+    "pastParticle": "beschworen"
+  },
+  "besehen": {
+    "stems": [
+      "besah",
+      "beseh",
+      "besieh",
+      "besäh"
+    ],
+    "pastParticle": "besehen"
+  },
+  "besingen": {
+    "stems": [
+      "besang",
+      "besing",
+      "besäng"
+    ],
+    "pastParticle": "besungen"
+  },
+  "besinnen": {
+    "stems": [
+      "besann",
+      "besinn",
+      "besänn",
+      "besönn"
+    ],
+    "pastParticle": "besonnen"
+  },
+  "besitzen": {
+    "stems": [
+      "besaß",
+      "besitz",
+      "besäß"
+    ],
+    "pastParticle": "besessen"
+  },
+  "bespeien": {
+    "stems": [
+      "bespei",
+      "bespi",
+      "bespie"
+    ],
+    "pastParticle": "bespien"
+  },
+  "besprechen": {
+    "stems": [
+      "besprach",
+      "besprech",
+      "besprich",
+      "bespräch"
+    ],
+    "pastParticle": "besprochen"
+  },
+  "bespringen": {
+    "stems": [
+      "besprang",
+      "bespring",
+      "bespräng"
+    ],
+    "pastParticle": "besprungen"
+  },
+  "bestechen": {
+    "stems": [
+      "bestach",
+      "bestech",
+      "bestich",
+      "bestäch"
+    ],
+    "pastParticle": "bestochen"
+  },
+  "bestehen": {
+    "stems": [
+      "bestand",
+      "besteh",
+      "beständ",
+      "bestünd"
+    ],
+    "pastParticle": "bestanden"
+  },
+  "bestehlen": {
+    "stems": [
+      "bestahl",
+      "bestehl",
+      "bestiehl",
+      "bestähl",
+      "bestöhl"
+    ],
+    "pastParticle": "bestohlen"
+  },
+  "besteigen": {
+    "stems": [
+      "besteig",
+      "bestieg"
+    ],
+    "pastParticle": "bestiegen"
+  },
+  "besterben": {
+    "stems": [
+      "bestarb",
+      "besterb",
+      "bestirb",
+      "bestürb"
+    ],
+    "pastParticle": "bestorben"
+  },
+  "bestieben": {
+    "stems": [
+      "bestieb",
+      "bestob",
+      "bestöb"
+    ],
+    "pastParticle": "bestoben"
+  },
+  "bestoßen": {
+    "stems": [
+      "bestieß",
+      "bestoß",
+      "bestöß"
+    ],
+    "pastParticle": "bestoßen"
+  },
+  "bestreichen": {
+    "stems": [
+      "bestreich",
+      "bestrich"
+    ],
+    "pastParticle": "bestrichen"
+  },
+  "bestreiten": {
+    "stems": [
+      "bestreit",
+      "bestritt"
+    ],
+    "pastParticle": "bestritten"
+  },
+  "betragen": {
+    "stems": [
+      "betrag",
+      "betrug",
+      "beträg",
+      "betrüg"
+    ],
+    "pastParticle": "betragen"
+  },
+  "betreffen": {
+    "stems": [
+      "betraf",
+      "betreff",
+      "betriff",
+      "beträf"
+    ],
+    "pastParticle": "betroffen"
+  },
+  "betreiben": {
+    "stems": [
+      "betreib",
+      "betrieb"
+    ],
+    "pastParticle": "betrieben"
+  },
+  "betreten": {
+    "stems": [
+      "betrat",
+      "betret",
+      "betritt",
+      "beträt"
+    ],
+    "pastParticle": "betreten"
+  },
+  "betrinken": {
+    "stems": [
+      "betrank",
+      "betrink",
+      "betränk"
+    ],
+    "pastParticle": "betrunken"
+  },
+  "betrügen": {
+    "stems": [
+      "betrog",
+      "betrög",
+      "betrüg"
+    ],
+    "pastParticle": "betrogen"
+  },
+  "betun": {
+    "stems": [
+      "betat",
+      "betu",
+      "betät"
+    ],
+    "pastParticle": "betan"
+  },
+  "bewachsen": {
+    "stems": [
+      "bewachs",
+      "bewuchs",
+      "bewächs",
+      "bewüchs"
+    ],
+    "pastParticle": "bewachsen"
+  },
+  "bewegen": {
+    "stems": [
+      "beweg",
+      "bewog",
+      "bewög"
+    ],
+    "pastParticle": "bewogen"
+  },
+  "beweisen": {
+    "stems": [
+      "beweis",
+      "bewies"
+    ],
+    "pastParticle": "bewiesen"
+  },
+  "bewenden": {
+    "stems": [
+      "bewand",
+      "bewend"
+    ],
+    "pastParticle": "bewandt"
+  },
+  "bewerben": {
+    "stems": [
+      "bewarb",
+      "bewerb",
+      "bewirb",
+      "bewürb"
+    ],
+    "pastParticle": "beworben"
+  },
+  "bewerfen": {
+    "stems": [
+      "bewarf",
+      "bewerf",
+      "bewirf",
+      "bewürf"
+    ],
+    "pastParticle": "beworfen"
+  },
+  "beziehen": {
+    "stems": [
+      "bezieh",
+      "bezog",
+      "bezög"
+    ],
+    "pastParticle": "bezogen"
+  },
+  "bezwingen": {
+    "stems": [
+      "bezwang",
+      "bezwing",
+      "bezwäng"
+    ],
+    "pastParticle": "bezwungen"
+  },
+  "bleichen": {
+    "stems": [
+      "bleich",
+      "blich"
+    ],
+    "pastParticle": "geblichen"
+  },
+  "stehlen": {
+    "stems": [
+      "stahl",
+      "stehl",
+      "stiehl",
+      "stähl",
+      "stöhl"
+    ],
+    "pastParticle": "gestohlen"
+  },
+  "durchdringen": {
+    "stems": [
+      "durchdrang",
+      "durchdring",
+      "durchdräng"
+    ],
+    "pastParticle": "durchdrungen"
+  },
+  "dürfen": {
+    "stems": [
+      "darf",
+      "durf",
+      "dürf"
+    ],
+    "pastParticle": "gedurft"
+  },
+  "durchfahren": {
+    "stems": [
+      "durchfahr",
+      "durchfuhr",
+      "durchfähr",
+      "durchführ"
+    ],
+    "pastParticle": "durchfahren"
+  },
+  "durchfließen": {
+    "stems": [
+      "durchfließ",
+      "durchfloss",
+      "durchflöss"
+    ],
+    "pastParticle": "durchflossen"
+  },
+  "gären": {
+    "stems": [
+      "gor",
+      "gär",
+      "gör"
+    ],
+    "pastParticle": "gegoren"
+  },
+  "durchhauen": {
+    "stems": [
+      "durchhau",
+      "durchhieb"
+    ],
+    "pastParticle": "durchhauen"
+  },
+  "durchleiden": {
+    "stems": [
+      "durchleid",
+      "durchlitt"
+    ],
+    "pastParticle": "durchlitten"
+  },
+  "müssen": {
+    "stems": [
+      "muss",
+      "müss"
+    ],
+    "pastParticle": "gemusst"
+  },
+  "durchscheinen": {
+    "stems": [
+      "durchschein",
+      "durchschien"
+    ],
+    "pastParticle": "durchschienen"
+  },
+  "durchschlagen": {
+    "stems": [
+      "durchschlag",
+      "durchschlug",
+      "durchschläg",
+      "durchschlüg"
+    ],
+    "pastParticle": "durchschlagen"
+  },
+  "schliefen": {
+    "stems": [
+      "schlief",
+      "schloff",
+      "schlöff"
+    ],
+    "pastParticle": "geschloffen"
+  },
+  "schmelzen": {
+    "stems": [
+      "schmelz",
+      "schmilz",
+      "schmolz",
+      "schmölz"
+    ],
+    "pastParticle": "geschmolzen"
+  },
+  "durchschneiden": {
+    "stems": [
+      "durchschneid",
+      "durchschnitt"
+    ],
+    "pastParticle": "durchschnitten"
+  },
+  "durchstechen": {
+    "stems": [
+      "durchstach",
+      "durchstech",
+      "durchstich",
+      "durchstäch"
+    ],
+    "pastParticle": "durchstochen"
+  },
+  "dünken": {
+    "stems": [
+      "deuch",
+      "dünk"
+    ],
+    "pastParticle": "gedeucht"
+  },
+  "gestehen": {
+    "stems": [
+      "gestand",
+      "gesteh",
+      "geständ",
+      "gestünd"
+    ],
+    "pastParticle": "gestanden"
+  },
+  "sinken": {
+    "stems": [
+      "sank",
+      "sink",
+      "sänk"
+    ],
+    "pastParticle": "gesunken"
+  },
+  "weben": {
+    "stems": [
+      "web",
+      "wob",
+      "wöb"
+    ],
+    "pastParticle": "gewoben"
+  },
+  "empfangen": {
+    "stems": [
+      "empfang",
+      "empfing",
+      "empfäng"
+    ],
+    "pastParticle": "empfangen"
+  },
+  "empfehlen": {
+    "stems": [
+      "empfahl",
+      "empfehl",
+      "empfiehl",
+      "empfähl",
+      "empföhl"
+    ],
+    "pastParticle": "empfohlen"
+  },
+  "klimmen": {
+    "stems": [
+      "klimm",
+      "klomm",
+      "klömm"
+    ],
+    "pastParticle": "geklommen"
+  },
+  "entbieten": {
+    "stems": [
+      "entbiet",
+      "entbot",
+      "entböt"
+    ],
+    "pastParticle": "entboten"
+  },
+  "entbinden": {
+    "stems": [
+      "entband",
+      "entbind",
+      "entbänd"
+    ],
+    "pastParticle": "entbunden"
+  },
+  "entbrennen": {
+    "stems": [
+      "entbrann",
+      "entbrenn"
+    ],
+    "pastParticle": "entbrannt"
+  },
+  "entfahren": {
+    "stems": [
+      "entfahr",
+      "entfuhr",
+      "entfähr",
+      "entführ"
+    ],
+    "pastParticle": "entfahren"
+  },
+  "entfallen": {
+    "stems": [
+      "entfall",
+      "entfiel",
+      "entfäll"
+    ],
+    "pastParticle": "entfallen"
+  },
+  "entflechten": {
+    "stems": [
+      "entflecht",
+      "entflicht",
+      "entflocht",
+      "entflöcht"
+    ],
+    "pastParticle": "entflochten"
+  },
+  "entfliegen": {
+    "stems": [
+      "entflieg",
+      "entflog",
+      "entflög"
+    ],
+    "pastParticle": "entflogen"
+  },
+  "entfliehen": {
+    "stems": [
+      "entflieh",
+      "entfloh",
+      "entflöh"
+    ],
+    "pastParticle": "entflohen"
+  },
+  "entfließen": {
+    "stems": [
+      "entfließ",
+      "entfloss",
+      "entflöss"
+    ],
+    "pastParticle": "entflossen"
+  },
+  "entgehen": {
+    "stems": [
+      "entgeh",
+      "entging"
+    ],
+    "pastParticle": "entgangen"
+  },
+  "entgelten": {
+    "stems": [
+      "entgalt",
+      "entgelt",
+      "entgilt",
+      "entgält",
+      "entgölt"
+    ],
+    "pastParticle": "entgolten"
+  },
+  "entgleiten": {
+    "stems": [
+      "entgleit",
+      "entglitt"
+    ],
+    "pastParticle": "entglitten"
+  },
+  "enthalten": {
+    "stems": [
+      "enthalt",
+      "enthielt",
+      "enthält"
+    ],
+    "pastParticle": "enthalten"
+  },
+  "entheben": {
+    "stems": [
+      "entheb",
+      "enthob",
+      "enthub",
+      "enthöb",
+      "enthüb"
+    ],
+    "pastParticle": "enthoben"
+  },
+  "entkommen": {
+    "stems": [
+      "entkam",
+      "entkomm",
+      "entkäm"
+    ],
+    "pastParticle": "entkommen"
+  },
+  "entladen": {
+    "stems": [
+      "entlad",
+      "entlud",
+      "entläd",
+      "entlüd"
+    ],
+    "pastParticle": "entladen"
+  },
+  "entlassen": {
+    "stems": [
+      "entlass",
+      "entließ",
+      "entläss"
+    ],
+    "pastParticle": "entlassen"
+  },
+  "entlaufen": {
+    "stems": [
+      "entlauf",
+      "entlief",
+      "entläuf"
+    ],
+    "pastParticle": "entlaufen"
+  },
+  "entleihen": {
+    "stems": [
+      "entleih",
+      "entlieh"
+    ],
+    "pastParticle": "entliehen"
+  },
+  "entnehmen": {
+    "stems": [
+      "entnahm",
+      "entnehm",
+      "entnimm",
+      "entnähm"
+    ],
+    "pastParticle": "entnommen"
+  },
+  "entreißen": {
+    "stems": [
+      "entreiß",
+      "entriss"
+    ],
+    "pastParticle": "entrissen"
+  },
+  "entringen": {
+    "stems": [
+      "entrang",
+      "entring",
+      "enträng"
+    ],
+    "pastParticle": "entrungen"
+  },
+  "entrinnen": {
+    "stems": [
+      "entrann",
+      "entrinn",
+      "entränn",
+      "entrönn"
+    ],
+    "pastParticle": "entronnen"
+  },
+  "entscheiden": {
+    "stems": [
+      "entscheid",
+      "entschied"
+    ],
+    "pastParticle": "entschieden"
+  },
+  "entschlafen": {
+    "stems": [
+      "entschlaf",
+      "entschlief",
+      "entschläf"
+    ],
+    "pastParticle": "entschlafen"
+  },
+  "entschlagen": {
+    "stems": [
+      "entschlag",
+      "entschlug",
+      "entschläg",
+      "entschlüg"
+    ],
+    "pastParticle": "entschlagen"
+  },
+  "entschließen": {
+    "stems": [
+      "entschließ",
+      "entschloss",
+      "entschlöss"
+    ],
+    "pastParticle": "entschlossen"
+  },
+  "entschwinden": {
+    "stems": [
+      "entschwand",
+      "entschwind",
+      "entschwänd"
+    ],
+    "pastParticle": "entschwunden"
+  },
+  "entsenden": {
+    "stems": [
+      "entsand",
+      "entsend"
+    ],
+    "pastParticle": "entsandt"
+  },
+  "entsinnen": {
+    "stems": [
+      "entsann",
+      "entsinn",
+      "entsänn",
+      "entsönn"
+    ],
+    "pastParticle": "entsonnen"
+  },
+  "entspinnen": {
+    "stems": [
+      "entspann",
+      "entspinn",
+      "entspänn",
+      "entspönn"
+    ],
+    "pastParticle": "entsponnen"
+  },
+  "entsprechen": {
+    "stems": [
+      "entsprach",
+      "entsprech",
+      "entsprich",
+      "entspräch"
+    ],
+    "pastParticle": "entsprochen"
+  },
+  "entspringen": {
+    "stems": [
+      "entsprang",
+      "entspring",
+      "entspräng"
+    ],
+    "pastParticle": "entsprungen"
+  },
+  "entstehen": {
+    "stems": [
+      "entstand",
+      "entsteh",
+      "entständ",
+      "entstünd"
+    ],
+    "pastParticle": "entstanden"
+  },
+  "entsteigen": {
+    "stems": [
+      "entsteig",
+      "entstieg"
+    ],
+    "pastParticle": "entstiegen"
+  },
+  "entwachsen": {
+    "stems": [
+      "entwachs",
+      "entwuchs",
+      "entwächs",
+      "entwüchs"
+    ],
+    "pastParticle": "entwachsen"
+  },
+  "entweichen": {
+    "stems": [
+      "entweich",
+      "entwich"
+    ],
+    "pastParticle": "entwichen"
+  },
+  "entwerfen": {
+    "stems": [
+      "entwarf",
+      "entwerf",
+      "entwirf",
+      "entwürf"
+    ],
+    "pastParticle": "entworfen"
+  },
+  "entwinden": {
+    "stems": [
+      "entwand",
+      "entwind",
+      "entwänd"
+    ],
+    "pastParticle": "entwunden"
+  },
+  "entziehen": {
+    "stems": [
+      "entzieh",
+      "entzog",
+      "entzög"
+    ],
+    "pastParticle": "entzogen"
+  },
+  "erbieten": {
+    "stems": [
+      "erbiet",
+      "erbot",
+      "erböt"
+    ],
+    "pastParticle": "erboten"
+  },
+  "erbitten": {
+    "stems": [
+      "erbat",
+      "erbitt",
+      "erbät"
+    ],
+    "pastParticle": "erbeten"
+  },
+  "erbleichen": {
+    "stems": [
+      "erbleich",
+      "erblich"
+    ],
+    "pastParticle": "erblichen"
+  },
+  "erbrechen": {
+    "stems": [
+      "erbrach",
+      "erbrech",
+      "erbrich",
+      "erbräch"
+    ],
+    "pastParticle": "erbrochen"
+  },
+  "erbringen": {
+    "stems": [
+      "erbrach",
+      "erbring",
+      "erbräch"
+    ],
+    "pastParticle": "erbracht"
+  },
+  "erdenken": {
+    "stems": [
+      "erdach",
+      "erdenk",
+      "erdäch"
+    ],
+    "pastParticle": "erdacht"
+  },
+  "erfahren": {
+    "stems": [
+      "erfahr",
+      "erfuhr",
+      "erfähr",
+      "erführ"
+    ],
+    "pastParticle": "erfahren"
+  },
+  "erfangen": {
+    "stems": [
+      "erfang",
+      "erfing",
+      "erfäng"
+    ],
+    "pastParticle": "erfangen"
+  },
+  "erfechten": {
+    "stems": [
+      "erfecht",
+      "erficht",
+      "erfocht",
+      "erföcht"
+    ],
+    "pastParticle": "erfochten"
+  },
+  "erfinden": {
+    "stems": [
+      "erfand",
+      "erfind",
+      "erfänd"
+    ],
+    "pastParticle": "erfunden"
+  },
+  "erfliegen": {
+    "stems": [
+      "erflieg",
+      "erflog",
+      "erflög"
+    ],
+    "pastParticle": "erflogen"
+  },
+  "erfrieren": {
+    "stems": [
+      "erfrier",
+      "erfror",
+      "erfrör"
+    ],
+    "pastParticle": "erfroren"
+  },
+  "ergeben": {
+    "stems": [
+      "ergab",
+      "ergeb",
+      "ergib",
+      "ergäb"
+    ],
+    "pastParticle": "ergeben"
+  },
+  "ergehen": {
+    "stems": [
+      "ergeh",
+      "erging"
+    ],
+    "pastParticle": "ergangen"
+  },
+  "ergießen": {
+    "stems": [
+      "ergieß",
+      "ergoss",
+      "ergöss"
+    ],
+    "pastParticle": "ergossen"
+  },
+  "erglimmen": {
+    "stems": [
+      "erglimm",
+      "erglomm",
+      "erglömm"
+    ],
+    "pastParticle": "erglommen"
+  },
+  "ergraben": {
+    "stems": [
+      "ergrab",
+      "ergrub",
+      "ergräb",
+      "ergrüb"
+    ],
+    "pastParticle": "ergraben"
+  },
+  "ergreifen": {
+    "stems": [
+      "ergreif",
+      "ergriff"
+    ],
+    "pastParticle": "ergriffen"
+  },
+  "erheben": {
+    "stems": [
+      "erheb",
+      "erhob",
+      "erhub",
+      "erhöb",
+      "erhüb"
+    ],
+    "pastParticle": "erhoben"
+  },
+  "erklimmen": {
+    "stems": [
+      "erklimm",
+      "erklomm",
+      "erklömm"
+    ],
+    "pastParticle": "erklommen"
+  },
+  "erklingen": {
+    "stems": [
+      "erklang",
+      "erkling",
+      "erkläng"
+    ],
+    "pastParticle": "erklungen"
+  },
+  "erküren": {
+    "stems": [
+      "erkor",
+      "erkör",
+      "erkür"
+    ],
+    "pastParticle": "erkoren"
+  },
+  "erlassen": {
+    "stems": [
+      "erlass",
+      "erließ",
+      "erläss"
+    ],
+    "pastParticle": "erlassen"
+  },
+  "erlaufen": {
+    "stems": [
+      "erlauf",
+      "erlief",
+      "erläuf"
+    ],
+    "pastParticle": "erlaufen"
+  },
+  "erleiden": {
+    "stems": [
+      "erleid",
+      "erlitt"
+    ],
+    "pastParticle": "erlitten"
+  },
+  "erlesen": {
+    "stems": [
+      "erlas",
+      "erles",
+      "erlies",
+      "erläs"
+    ],
+    "pastParticle": "erlesen"
+  },
+  "erliegen": {
+    "stems": [
+      "erlag",
+      "erlieg",
+      "erläg"
+    ],
+    "pastParticle": "erlegen"
+  },
+  "erlöschen": {
+    "stems": [
+      "erlisch",
+      "erlosch",
+      "erlösch"
+    ],
+    "pastParticle": "erloschen"
+  },
+  "erlügen": {
+    "stems": [
+      "erlog",
+      "erlög",
+      "erlüg"
+    ],
+    "pastParticle": "erlogen"
+  },
+  "ermessen": {
+    "stems": [
+      "ermaß",
+      "ermess",
+      "ermiss",
+      "ermäß"
+    ],
+    "pastParticle": "ermessen"
+  },
+  "ernennen": {
+    "stems": [
+      "ernann",
+      "ernenn"
+    ],
+    "pastParticle": "ernannt"
+  },
+  "erraten": {
+    "stems": [
+      "errat",
+      "erriet",
+      "errät"
+    ],
+    "pastParticle": "erraten"
+  },
+  "erriechen": {
+    "stems": [
+      "erriech",
+      "erroch",
+      "erröch"
+    ],
+    "pastParticle": "errochen"
+  },
+  "erringen": {
+    "stems": [
+      "errang",
+      "erring",
+      "erräng"
+    ],
+    "pastParticle": "errungen"
+  },
+  "ersaufen": {
+    "stems": [
+      "ersauf",
+      "ersoff",
+      "ersäuf",
+      "ersöff"
+    ],
+    "pastParticle": "ersoffen"
+  },
+  "erschaffen": {
+    "stems": [
+      "erschaff",
+      "erschuf",
+      "erschüf"
+    ],
+    "pastParticle": "erschaffen"
+  },
+  "erschallen": {
+    "stems": [
+      "erschall",
+      "erscholl",
+      "erschöll"
+    ],
+    "pastParticle": "erschollen"
+  },
+  "erscheinen": {
+    "stems": [
+      "erschein",
+      "erschien"
+    ],
+    "pastParticle": "erschienen"
+  },
+  "erschießen": {
+    "stems": [
+      "erschieß",
+      "erschoss",
+      "erschöss"
+    ],
+    "pastParticle": "erschossen"
+  },
+  "erschlafen": {
+    "stems": [
+      "erschlaf",
+      "erschlief",
+      "erschläf"
+    ],
+    "pastParticle": "erschlafen"
+  },
+  "erschlagen": {
+    "stems": [
+      "erschlag",
+      "erschlug",
+      "erschläg",
+      "erschlüg"
+    ],
+    "pastParticle": "erschlagen"
+  },
+  "erschleichen": {
+    "stems": [
+      "erschleich",
+      "erschlich"
+    ],
+    "pastParticle": "erschlichen"
+  },
+  "erschließen": {
+    "stems": [
+      "erschließ",
+      "erschloss",
+      "erschlöss"
+    ],
+    "pastParticle": "erschlossen"
+  },
+  "erschmelzen": {
+    "stems": [
+      "erschmelz",
+      "erschmilz",
+      "erschmolz",
+      "erschmölz"
+    ],
+    "pastParticle": "erschmolzen"
+  },
+  "erschrecken": {
+    "stems": [
+      "erschrak",
+      "erschreck",
+      "erschrick",
+      "erschräk"
+    ],
+    "pastParticle": "erschrocken"
+  },
+  "erschreiben": {
+    "stems": [
+      "erschreib",
+      "erschrieb"
+    ],
+    "pastParticle": "erschrieben"
+  },
+  "erschwimmen": {
+    "stems": [
+      "erschwamm",
+      "erschwimm",
+      "erschwämm",
+      "erschwömm"
+    ],
+    "pastParticle": "erschwommen"
+  },
+  "erschwingen": {
+    "stems": [
+      "erschwang",
+      "erschwing",
+      "erschwäng"
+    ],
+    "pastParticle": "erschwungen"
+  },
+  "ersehen": {
+    "stems": [
+      "ersah",
+      "erseh",
+      "ersieh",
+      "ersäh"
+    ],
+    "pastParticle": "ersehen"
+  },
+  "ersingen": {
+    "stems": [
+      "ersang",
+      "ersing",
+      "ersäng"
+    ],
+    "pastParticle": "ersungen"
+  },
+  "ersinnen": {
+    "stems": [
+      "ersann",
+      "ersinn",
+      "ersänn",
+      "ersönn"
+    ],
+    "pastParticle": "ersonnen"
+  },
+  "ersitzen": {
+    "stems": [
+      "ersaß",
+      "ersitz",
+      "ersäß"
+    ],
+    "pastParticle": "ersessen"
+  },
+  "erspinnen": {
+    "stems": [
+      "erspann",
+      "erspinn",
+      "erspänn",
+      "erspönn"
+    ],
+    "pastParticle": "ersponnen"
+  },
+  "erspringen": {
+    "stems": [
+      "ersprang",
+      "erspring",
+      "erspräng"
+    ],
+    "pastParticle": "ersprungen"
+  },
+  "erstechen": {
+    "stems": [
+      "erstach",
+      "erstech",
+      "erstich",
+      "erstäch"
+    ],
+    "pastParticle": "erstochen"
+  },
+  "erstehen": {
+    "stems": [
+      "erstand",
+      "ersteh",
+      "erständ",
+      "erstünd"
+    ],
+    "pastParticle": "erstanden"
+  },
+  "ersteigen": {
+    "stems": [
+      "ersteig",
+      "erstieg"
+    ],
+    "pastParticle": "erstiegen"
+  },
+  "ersterben": {
+    "stems": [
+      "erstarb",
+      "ersterb",
+      "erstirb",
+      "erstürb"
+    ],
+    "pastParticle": "erstorben"
+  },
+  "erstreiten": {
+    "stems": [
+      "erstreit",
+      "erstritt"
+    ],
+    "pastParticle": "erstritten"
+  },
+  "ertragen": {
+    "stems": [
+      "ertrag",
+      "ertrug",
+      "erträg",
+      "ertrüg"
+    ],
+    "pastParticle": "ertragen"
+  },
+  "ertrinken": {
+    "stems": [
+      "ertrank",
+      "ertrink",
+      "ertränk"
+    ],
+    "pastParticle": "ertrunken"
+  },
+  "ertrügen": {
+    "stems": [
+      "ertrog",
+      "ertrög",
+      "ertrüg"
+    ],
+    "pastParticle": "ertrogen"
+  },
+  "erwachsen": {
+    "stems": [
+      "erwachs",
+      "erwuchs",
+      "erwächs",
+      "erwüchs"
+    ],
+    "pastParticle": "erwachsen"
+  },
+  "erweben": {
+    "stems": [
+      "erweb",
+      "erwob",
+      "erwöb"
+    ],
+    "pastParticle": "erwoben"
+  },
+  "erweisen": {
+    "stems": [
+      "erweis",
+      "erwies"
+    ],
+    "pastParticle": "erwiesen"
+  },
+  "erwerben": {
+    "stems": [
+      "erwarb",
+      "erwerb",
+      "erwirb",
+      "erwürb"
+    ],
+    "pastParticle": "erworben"
+  },
+  "erwägen": {
+    "stems": [
+      "erwog",
+      "erwäg",
+      "erwög"
+    ],
+    "pastParticle": "erwogen"
+  },
+  "erzwingen": {
+    "stems": [
+      "erzwang",
+      "erzwing",
+      "erzwäng"
+    ],
+    "pastParticle": "erzwungen"
+  },
+  "flechten": {
+    "stems": [
+      "flecht",
+      "flicht",
+      "flocht",
+      "flöcht"
+    ],
+    "pastParticle": "geflochten"
+  },
+  "reiten": {
+    "stems": [
+      "reit",
+      "ritt"
+    ],
+    "pastParticle": "geritten"
+  },
+  "wollen": {
+    "stems": [
+      "will",
+      "woll"
+    ],
+    "pastParticle": "gewollt"
+  },
+  "fragen": {
+    "stems": [
+      "frag",
+      "frug",
+      "fräg",
+      "früg"
+    ],
+    "pastParticle": "gefragt"
+  },
+  "gebieten": {
+    "stems": [
+      "gebiet",
+      "gebot",
+      "geböt"
+    ],
+    "pastParticle": "geboten"
+  },
+  "gebrechen": {
+    "stems": [
+      "gebrach",
+      "gebrech",
+      "gebrich",
+      "gebräch"
+    ],
+    "pastParticle": "gebrochen"
+  },
+  "gebären": {
+    "stems": [
+      "gebar",
+      "gebier",
+      "gebär"
+    ],
+    "pastParticle": "geboren"
+  },
+  "gedeihen": {
+    "stems": [
+      "gedeih",
+      "gedieh"
+    ],
+    "pastParticle": "gediehen"
+  },
+  "gedenken": {
+    "stems": [
+      "gedach",
+      "gedenk",
+      "gedäch"
+    ],
+    "pastParticle": "gedacht"
+  },
+  "gefallen": {
+    "stems": [
+      "gefall",
+      "gefiel",
+      "gefäll"
+    ],
+    "pastParticle": "gefallen"
+  },
+  "gefrieren": {
+    "stems": [
+      "gefrier",
+      "gefror",
+      "gefrör"
+    ],
+    "pastParticle": "gefroren"
+  },
+  "gelingen": {
+    "stems": [
+      "gelang",
+      "geling",
+      "geläng"
+    ],
+    "pastParticle": "gelungen"
+  },
+  "gelten": {
+    "stems": [
+      "galt",
+      "gelt",
+      "gilt",
+      "gält",
+      "gölt"
+    ],
+    "pastParticle": "gegolten"
+  },
+  "genesen": {
+    "stems": [
+      "genas",
+      "genes",
+      "genäs"
+    ],
+    "pastParticle": "genesen"
+  },
+  "genießen": {
+    "stems": [
+      "genieß",
+      "genoss",
+      "genöss"
+    ],
+    "pastParticle": "genossen"
+  },
+  "gerinnen": {
+    "stems": [
+      "gerann",
+      "gerinn",
+      "geränn",
+      "gerönn"
+    ],
+    "pastParticle": "geronnen"
+  },
+  "geschehen": {
+    "stems": [
+      "geschah",
+      "gescheh",
+      "geschieh",
+      "geschäh"
+    ],
+    "pastParticle": "geschehen"
+  },
+  "gleißen": {
+    "stems": [
+      "gleiß",
+      "gliss"
+    ],
+    "pastParticle": "geglissen"
+  },
+  "glimmen": {
+    "stems": [
+      "glimm",
+      "glomm",
+      "glömm"
+    ],
+    "pastParticle": "geglommen"
+  },
+  "heißen": {
+    "stems": [
+      "heiß",
+      "hieß"
+    ],
+    "pastParticle": "geheißen"
+  },
+  "sieden": {
+    "stems": [
+      "sied",
+      "sott",
+      "sött"
+    ],
+    "pastParticle": "gesotten"
+  },
+  "sollen": {
+    "stems": [
+      "soll"
+    ],
+    "pastParticle": "gesollt"
+  },
+  "mögen": {
+    "stems": [
+      "mag",
+      "moch",
+      "möch",
+      "mög"
+    ],
+    "pastParticle": "gemocht"
+  },
+  "hinterbleiben": {
+    "stems": [
+      "hinterbleib",
+      "hinterblieb"
+    ],
+    "pastParticle": "hinterblieben"
+  },
+  "hintergehen": {
+    "stems": [
+      "hintergeh",
+      "hinterging"
+    ],
+    "pastParticle": "hintergangen"
+  },
+  "hinterlassen": {
+    "stems": [
+      "hinterlass",
+      "hinterließ",
+      "hinterläss"
+    ],
+    "pastParticle": "hinterlassen"
+  },
+  "hinterlaufen": {
+    "stems": [
+      "hinterlauf",
+      "hinterlief",
+      "hinterläuf"
+    ],
+    "pastParticle": "hinterlaufen"
+  },
+  "hintertreiben": {
+    "stems": [
+      "hintertreib",
+      "hintertrieb"
+    ],
+    "pastParticle": "hintertrieben"
+  },
+  "hinterziehen": {
+    "stems": [
+      "hinterzieh",
+      "hinterzog",
+      "hinterzög"
+    ],
+    "pastParticle": "hinterzogen"
+  },
+  "schlingen": {
+    "stems": [
+      "schlang",
+      "schling",
+      "schläng"
+    ],
+    "pastParticle": "geschlungen"
+  },
+  "schrecken": {
+    "stems": [
+      "schrak",
+      "schreck",
+      "schrick",
+      "schräk"
+    ],
+    "pastParticle": "geschreckt"
+  },
+  "schwingen": {
+    "stems": [
+      "schwang",
+      "schwing",
+      "schwäng"
+    ],
+    "pastParticle": "geschwungen"
+  },
+  "kiesen": {
+    "stems": [
+      "kies",
+      "kor",
+      "kör"
+    ],
+    "pastParticle": "gekoren"
+  },
+  "klieben": {
+    "stems": [
+      "klieb",
+      "klob",
+      "klöb"
+    ],
+    "pastParticle": "gekloben"
+  },
+  "krauchen": {
+    "stems": [
+      "krauch",
+      "kroch",
+      "kröch"
+    ],
+    "pastParticle": "gekrochen"
+  },
+  "kreischen": {
+    "stems": [
+      "kreisch",
+      "krisch"
+    ],
+    "pastParticle": "gekrischen"
+  },
+  "küren": {
+    "stems": [
+      "kor",
+      "kör",
+      "kür"
+    ],
+    "pastParticle": "gekoren"
+  },
+  "leiden": {
+    "stems": [
+      "leid",
+      "litt"
+    ],
+    "pastParticle": "gelitten"
+  },
+  "lobpreisen": {
+    "stems": [
+      "lobpreis",
+      "lobpries"
+    ],
+    "pastParticle": "lobgepriesen"
+  },
+  "lobsingen": {
+    "stems": [
+      "lobsang",
+      "lobsing",
+      "lobsäng"
+    ],
+    "pastParticle": "lobgesungen"
+  },
+  "meiden": {
+    "stems": [
+      "meid",
+      "mied"
+    ],
+    "pastParticle": "gemieden"
+  },
+  "melken": {
+    "stems": [
+      "melk",
+      "milk",
+      "molk",
+      "mölk"
+    ],
+    "pastParticle": "gemolken"
+  },
+  "missfallen": {
+    "stems": [
+      "missfall",
+      "missfiel",
+      "missfäll"
+    ],
+    "pastParticle": "missfallen"
+  },
+  "misslingen": {
+    "stems": [
+      "misslang",
+      "missling",
+      "missläng"
+    ],
+    "pastParticle": "misslungen"
+  },
+  "missraten": {
+    "stems": [
+      "missrat",
+      "missriet",
+      "missrät"
+    ],
+    "pastParticle": "missraten"
+  },
+  "missverstehen": {
+    "stems": [
+      "missverstand",
+      "missversteh",
+      "missverständ",
+      "missverstünd"
+    ],
+    "pastParticle": "missverstanden"
+  },
+  "sinnen": {
+    "stems": [
+      "sann",
+      "sinn",
+      "sänn",
+      "sönn"
+    ],
+    "pastParticle": "gesonnen"
+  },
+  "vollziehen": {
+    "stems": [
+      "vollzieh",
+      "vollzog",
+      "vollzög"
+    ],
+    "pastParticle": "vollzogen"
+  },
+  "nennen": {
+    "stems": [
+      "nann",
+      "nenn"
+    ],
+    "pastParticle": "genannt"
+  },
+  "obliegen": {
+    "stems": [
+      "oblag",
+      "oblieg",
+      "obläg"
+    ],
+    "pastParticle": "oblegen"
+  },
+  "pflegen": {
+    "stems": [
+      "pfleg",
+      "pflog",
+      "pflög"
+    ],
+    "pastParticle": "gepflogen"
+  },
+  "preisen": {
+    "stems": [
+      "preis",
+      "pries"
+    ],
+    "pastParticle": "gepriesen"
+  },
+  "quellen": {
+    "stems": [
+      "quell",
+      "quill",
+      "quoll",
+      "quöll"
+    ],
+    "pastParticle": "gequollen"
+  },
+  "rinnen": {
+    "stems": [
+      "rann",
+      "rinn",
+      "ränn",
+      "rönn"
+    ],
+    "pastParticle": "geronnen"
+  },
+  "saufen": {
+    "stems": [
+      "sauf",
+      "soff",
+      "säuf",
+      "söff"
+    ],
+    "pastParticle": "gesoffen"
+  },
+  "schallen": {
+    "stems": [
+      "schall",
+      "scholl",
+      "schöll"
+    ],
+    "pastParticle": "geschallt"
+  },
+  "schelten": {
+    "stems": [
+      "schalt",
+      "schelt",
+      "schilt",
+      "schölt"
+    ],
+    "pastParticle": "gescholten"
+  },
+  "scheren": {
+    "stems": [
+      "scher",
+      "schor",
+      "schör"
+    ],
+    "pastParticle": "geschoren"
+  },
+  "schinden": {
+    "stems": [
+      "schind",
+      "schund",
+      "schünd"
+    ],
+    "pastParticle": "geschunden"
+  },
+  "schleifen": {
+    "stems": [
+      "schleif",
+      "schliff"
+    ],
+    "pastParticle": "geschliffen"
+  },
+  "schleißen": {
+    "stems": [
+      "schleiß",
+      "schliss"
+    ],
+    "pastParticle": "geschlissen"
+  },
+  "schnauben": {
+    "stems": [
+      "schnaub",
+      "schnob",
+      "schnöb"
+    ],
+    "pastParticle": "geschnoben"
+  },
+  "schnieben": {
+    "stems": [
+      "schnieb",
+      "schnob",
+      "schnöb"
+    ],
+    "pastParticle": "geschnoben"
+  },
+  "schreiten": {
+    "stems": [
+      "schreit",
+      "schritt"
+    ],
+    "pastParticle": "geschritten"
+  },
+  "schweigen": {
+    "stems": [
+      "schweig",
+      "schwieg"
+    ],
+    "pastParticle": "geschwiegen"
+  },
+  "schwinden": {
+    "stems": [
+      "schwand",
+      "schwind",
+      "schwänd"
+    ],
+    "pastParticle": "geschwunden"
+  },
+  "schwären": {
+    "stems": [
+      "schwier",
+      "schwor",
+      "schwär",
+      "schwör"
+    ],
+    "pastParticle": "geschworen"
+  },
+  "sein": {
+    "stems": [
+      "bi",
+      "bin",
+      "ist",
+      "seid",
+      "sind",
+      "sei",
+      "war",
+      "wär"
+    ],
+    "pastParticle": "gewesen"
+  },
+  "singen": {
+    "stems": [
+      "sang",
+      "sing",
+      "säng"
+    ],
+    "pastParticle": "gesungen"
+  },
+  "spalten": {
+    "stems": [
+      "spalt"
+    ],
+    "pastParticle": "gespalten"
+  },
+  "speiben": {
+    "stems": [
+      "speib",
+      "spieb"
+    ],
+    "pastParticle": "gespieben"
+  },
+  "spleißen": {
+    "stems": [
+      "spleiß",
+      "spliss"
+    ],
+    "pastParticle": "gesplissen"
+  },
+  "sprießen": {
+    "stems": [
+      "sprieß",
+      "spross",
+      "spröss"
+    ],
+    "pastParticle": "gesprossen"
+  },
+  "stecken": {
+    "stems": [
+      "stak",
+      "steck",
+      "stäk"
+    ],
+    "pastParticle": "gesteckt"
+  },
+  "stieben": {
+    "stems": [
+      "stieb",
+      "stob",
+      "stöb"
+    ],
+    "pastParticle": "gestoben"
+  },
+  "telben": {
+    "stems": [
+      "talb",
+      "telb",
+      "tilb",
+      "tülb"
+    ],
+    "pastParticle": "getolben"
+  },
+  "triefen": {
+    "stems": [
+      "trief",
+      "troff",
+      "tröff"
+    ],
+    "pastParticle": "getroffen"
+  },
+  "trügen": {
+    "stems": [
+      "trog",
+      "trög",
+      "trüg"
+    ],
+    "pastParticle": "getrogen"
+  },
+  "umfangen": {
+    "stems": [
+      "umfang",
+      "umfing",
+      "umfäng"
+    ],
+    "pastParticle": "umfangen"
+  },
+  "umflechten": {
+    "stems": [
+      "umflecht",
+      "umflicht",
+      "umflocht",
+      "umflöcht"
+    ],
+    "pastParticle": "umflochten"
+  },
+  "umfließen": {
+    "stems": [
+      "umfließ",
+      "umfloss",
+      "umflöss"
+    ],
+    "pastParticle": "umflossen"
+  },
+  "umgeben": {
+    "stems": [
+      "umgab",
+      "umgeb",
+      "umgib",
+      "umgäb"
+    ],
+    "pastParticle": "umgeben"
+  },
+  "umgehen": {
+    "stems": [
+      "umgeh",
+      "umging"
+    ],
+    "pastParticle": "umgangen"
+  },
+  "umhängen": {
+    "stems": [
+      "umhing",
+      "umhäng"
+    ],
+    "pastParticle": "umhangen"
+  },
+  "umreiten": {
+    "stems": [
+      "umreit",
+      "umritt"
+    ],
+    "pastParticle": "umritten"
+  },
+  "umschlagen": {
+    "stems": [
+      "umschlag",
+      "umschlug",
+      "umschläg",
+      "umschlüg"
+    ],
+    "pastParticle": "umschlagen"
+  },
+  "umschleichen": {
+    "stems": [
+      "umschleich",
+      "umschlich"
+    ],
+    "pastParticle": "umschlichen"
+  },
+  "umschließen": {
+    "stems": [
+      "umschließ",
+      "umschloss",
+      "umschlöss"
+    ],
+    "pastParticle": "umschlossen"
+  },
+  "umschreiben": {
+    "stems": [
+      "umschreib",
+      "umschrieb"
+    ],
+    "pastParticle": "umschrieben"
+  },
+  "umspinnen": {
+    "stems": [
+      "umspann",
+      "umspinn",
+      "umspänn",
+      "umspönn"
+    ],
+    "pastParticle": "umsponnen"
+  },
+  "umstreichen": {
+    "stems": [
+      "umstreich",
+      "umstrich"
+    ],
+    "pastParticle": "umstrichen"
+  },
+  "umstreiten": {
+    "stems": [
+      "umstreit",
+      "umstritt"
+    ],
+    "pastParticle": "umstritten"
+  },
+  "umwachsen": {
+    "stems": [
+      "umwachs",
+      "umwuchs",
+      "umwächs",
+      "umwüchs"
+    ],
+    "pastParticle": "umwachsen"
+  },
+  "umwerben": {
+    "stems": [
+      "umwarb",
+      "umwerb",
+      "umwirb",
+      "umwürb"
+    ],
+    "pastParticle": "umworben"
+  },
+  "winden": {
+    "stems": [
+      "wand",
+      "wind",
+      "wänd"
+    ],
+    "pastParticle": "gewunden"
+  },
+  "unterbieten": {
+    "stems": [
+      "unterbiet",
+      "unterbot",
+      "unterböt"
+    ],
+    "pastParticle": "unterboten"
+  },
+  "unterbinden": {
+    "stems": [
+      "unterband",
+      "unterbind",
+      "unterbänd"
+    ],
+    "pastParticle": "unterbunden"
+  },
+  "unterbleiben": {
+    "stems": [
+      "unterbleib",
+      "unterblieb"
+    ],
+    "pastParticle": "unterblieben"
+  },
+  "unterbrechen": {
+    "stems": [
+      "unterbrach",
+      "unterbrech",
+      "unterbrich",
+      "unterbräch"
+    ],
+    "pastParticle": "unterbrochen"
+  },
+  "unterfangen": {
+    "stems": [
+      "unterfang",
+      "unterfing",
+      "unterfäng"
+    ],
+    "pastParticle": "unterfangen"
+  },
+  "unterfliegen": {
+    "stems": [
+      "unterflieg",
+      "unterflog",
+      "unterflög"
+    ],
+    "pastParticle": "unterflogen"
+  },
+  "untergraben": {
+    "stems": [
+      "untergrab",
+      "untergrub",
+      "untergräb",
+      "untergrüb"
+    ],
+    "pastParticle": "untergraben"
+  },
+  "unterhalten": {
+    "stems": [
+      "unterhalt",
+      "unterhielt",
+      "unterhält"
+    ],
+    "pastParticle": "unterhalten"
+  },
+  "unterladen": {
+    "stems": [
+      "unterlad",
+      "unterlud",
+      "unterläd",
+      "unterlüd"
+    ],
+    "pastParticle": "unterladen"
+  },
+  "unterlassen": {
+    "stems": [
+      "unterlass",
+      "unterließ",
+      "unterläss"
+    ],
+    "pastParticle": "unterlassen"
+  },
+  "unterlaufen": {
+    "stems": [
+      "unterlauf",
+      "unterlief",
+      "unterläuf"
+    ],
+    "pastParticle": "unterlaufen"
+  },
+  "unterliegen": {
+    "stems": [
+      "unterlag",
+      "unterlieg",
+      "unterläg"
+    ],
+    "pastParticle": "unterlegen"
+  },
+  "unternehmen": {
+    "stems": [
+      "unternahm",
+      "unternehm",
+      "unternimm",
+      "unternähm"
+    ],
+    "pastParticle": "unternommen"
+  },
+  "unterscheiden": {
+    "stems": [
+      "unterscheid",
+      "unterschied"
+    ],
+    "pastParticle": "unterschieden"
+  },
+  "unterschieben": {
+    "stems": [
+      "unterschieb",
+      "unterschob",
+      "unterschöb"
+    ],
+    "pastParticle": "unterschoben"
+  },
+  "unterschneiden": {
+    "stems": [
+      "unterschneid",
+      "unterschnitt"
+    ],
+    "pastParticle": "unterschnitten"
+  },
+  "unterschreiben": {
+    "stems": [
+      "unterschreib",
+      "unterschrieb"
+    ],
+    "pastParticle": "unterschrieben"
+  },
+  "unterschreiten": {
+    "stems": [
+      "unterschreit",
+      "unterschritt"
+    ],
+    "pastParticle": "unterschritten"
+  },
+  "unterstehen": {
+    "stems": [
+      "unterstand",
+      "untersteh",
+      "unterständ",
+      "unterstünd"
+    ],
+    "pastParticle": "unterstanden"
+  },
+  "unterstreichen": {
+    "stems": [
+      "unterstreich",
+      "unterstrich"
+    ],
+    "pastParticle": "unterstrichen"
+  },
+  "untertreiben": {
+    "stems": [
+      "untertreib",
+      "untertrieb"
+    ],
+    "pastParticle": "untertrieben"
+  },
+  "unterwaschen": {
+    "stems": [
+      "unterwasch",
+      "unterwusch",
+      "unterwäsch",
+      "unterwüsch"
+    ],
+    "pastParticle": "unterwaschen"
+  },
+  "unterweisen": {
+    "stems": [
+      "unterweis",
+      "unterwies"
+    ],
+    "pastParticle": "unterwiesen"
+  },
+  "unterwerfen": {
+    "stems": [
+      "unterwarf",
+      "unterwerf",
+      "unterwirf",
+      "unterwürf"
+    ],
+    "pastParticle": "unterworfen"
+  },
+  "unterwinden": {
+    "stems": [
+      "unterwand",
+      "unterwind",
+      "unterwänd"
+    ],
+    "pastParticle": "unterwunden"
+  },
+  "unterziehen": {
+    "stems": [
+      "unterzieh",
+      "unterzog",
+      "unterzög"
+    ],
+    "pastParticle": "unterzogen"
+  },
+  "verbacken": {
+    "stems": [
+      "verback",
+      "verbuk",
+      "verbäck",
+      "verbük"
+    ],
+    "pastParticle": "verbacken"
+  },
+  "verbeißen": {
+    "stems": [
+      "verbeiß",
+      "verbiss"
+    ],
+    "pastParticle": "verbissen"
+  },
+  "verbergen": {
+    "stems": [
+      "verbarg",
+      "verberg",
+      "verbirg",
+      "verbärg"
+    ],
+    "pastParticle": "verborgen"
+  },
+  "verbiegen": {
+    "stems": [
+      "verbieg",
+      "verbog",
+      "verbög"
+    ],
+    "pastParticle": "verbogen"
+  },
+  "verbieten": {
+    "stems": [
+      "verbiet",
+      "verbot",
+      "verböt"
+    ],
+    "pastParticle": "verboten"
+  },
+  "verbinden": {
+    "stems": [
+      "verband",
+      "verbind",
+      "verbänd"
+    ],
+    "pastParticle": "verbunden"
+  },
+  "verbitten": {
+    "stems": [
+      "verbat",
+      "verbitt",
+      "verbät"
+    ],
+    "pastParticle": "verbeten"
+  },
+  "verblasen": {
+    "stems": [
+      "verblas",
+      "verblies",
+      "verbläs"
+    ],
+    "pastParticle": "verblasen"
+  },
+  "verbleiben": {
+    "stems": [
+      "verbleib",
+      "verblieb"
+    ],
+    "pastParticle": "verblieben"
+  },
+  "verbleichen": {
+    "stems": [
+      "verbleich",
+      "verblich"
+    ],
+    "pastParticle": "verblichen"
+  },
+  "verbraten": {
+    "stems": [
+      "verbrat",
+      "verbriet",
+      "verbrät"
+    ],
+    "pastParticle": "verbraten"
+  },
+  "verbrechen": {
+    "stems": [
+      "verbrach",
+      "verbrech",
+      "verbrich",
+      "verbräch"
+    ],
+    "pastParticle": "verbrochen"
+  },
+  "verbrennen": {
+    "stems": [
+      "verbrann",
+      "verbrenn"
+    ],
+    "pastParticle": "verbrannt"
+  },
+  "verbringen": {
+    "stems": [
+      "verbrach",
+      "verbring",
+      "verbräch"
+    ],
+    "pastParticle": "verbracht"
+  },
+  "verdenken": {
+    "stems": [
+      "verdach",
+      "verdenk",
+      "verdäch"
+    ],
+    "pastParticle": "verdacht"
+  },
+  "verderben": {
+    "stems": [
+      "verdarb",
+      "verderb",
+      "verdirb",
+      "verdürb"
+    ],
+    "pastParticle": "verdorben"
+  },
+  "verdingen": {
+    "stems": [
+      "verdang",
+      "verding",
+      "verdäng"
+    ],
+    "pastParticle": "verdungen"
+  },
+  "verdreschen": {
+    "stems": [
+      "verdresch",
+      "verdrisch",
+      "verdrosch",
+      "verdrösch"
+    ],
+    "pastParticle": "verdroschen"
+  },
+  "verdrießen": {
+    "stems": [
+      "verdrieß",
+      "verdross",
+      "verdröss"
+    ],
+    "pastParticle": "verdrossen"
+  },
+  "verfahren": {
+    "stems": [
+      "verfahr",
+      "verfuhr",
+      "verfähr",
+      "verführ"
+    ],
+    "pastParticle": "verfahren"
+  },
+  "verfallen": {
+    "stems": [
+      "verfall",
+      "verfiel",
+      "verfäll"
+    ],
+    "pastParticle": "verfallen"
+  },
+  "verfangen": {
+    "stems": [
+      "verfang",
+      "verfing",
+      "verfäng"
+    ],
+    "pastParticle": "verfangen"
+  },
+  "verfechten": {
+    "stems": [
+      "verfecht",
+      "verficht",
+      "verfocht",
+      "verföcht"
+    ],
+    "pastParticle": "verfochten"
+  },
+  "verflechten": {
+    "stems": [
+      "verflecht",
+      "verflicht",
+      "verflocht",
+      "verflöcht"
+    ],
+    "pastParticle": "verflochten"
+  },
+  "verfliegen": {
+    "stems": [
+      "verflieg",
+      "verflog",
+      "verflög"
+    ],
+    "pastParticle": "verflogen"
+  },
+  "verfließen": {
+    "stems": [
+      "verfließ",
+      "verfloss",
+      "verflöss"
+    ],
+    "pastParticle": "verflossen"
+  },
+  "verfressen": {
+    "stems": [
+      "verfraß",
+      "verfress",
+      "verfriss",
+      "verfräß"
+    ],
+    "pastParticle": "verfressen"
+  },
+  "vergeben": {
+    "stems": [
+      "vergab",
+      "vergeb",
+      "vergib",
+      "vergäb"
+    ],
+    "pastParticle": "vergeben"
+  },
+  "vergehen": {
+    "stems": [
+      "vergeh",
+      "verging"
+    ],
+    "pastParticle": "vergangen"
+  },
+  "vergelten": {
+    "stems": [
+      "vergalt",
+      "vergelt",
+      "vergilt",
+      "vergält",
+      "vergölt"
+    ],
+    "pastParticle": "vergolten"
+  },
+  "vergessen": {
+    "stems": [
+      "vergaß",
+      "vergess",
+      "vergiss",
+      "vergäß"
+    ],
+    "pastParticle": "vergessen"
+  },
+  "vergießen": {
+    "stems": [
+      "vergieß",
+      "vergoss",
+      "vergöss"
+    ],
+    "pastParticle": "vergossen"
+  },
+  "vergleichen": {
+    "stems": [
+      "vergleich",
+      "verglich"
+    ],
+    "pastParticle": "verglichen"
+  },
+  "verglimmen": {
+    "stems": [
+      "verglimm",
+      "verglomm"
+    ],
+    "pastParticle": "verglommen"
+  },
+  "vergraben": {
+    "stems": [
+      "vergrab",
+      "vergrub",
+      "vergräb",
+      "vergrüb"
+    ],
+    "pastParticle": "vergraben"
+  },
+  "vergreifen": {
+    "stems": [
+      "vergreif",
+      "vergriff"
+    ],
+    "pastParticle": "vergriffen"
+  },
+  "vergären": {
+    "stems": [
+      "vergor",
+      "vergär"
+    ],
+    "pastParticle": "vergoren"
+  },
+  "verhalten": {
+    "stems": [
+      "verhalt",
+      "verhielt",
+      "verhält"
+    ],
+    "pastParticle": "verhalten"
+  },
+  "verheben": {
+    "stems": [
+      "verheb",
+      "verhob",
+      "verhöb"
+    ],
+    "pastParticle": "verhoben"
+  },
+  "verheißen": {
+    "stems": [
+      "verheiß",
+      "verhieß"
+    ],
+    "pastParticle": "verheißen"
+  },
+  "verhelfen": {
+    "stems": [
+      "verhalf",
+      "verhelf",
+      "verhilf",
+      "verhälf",
+      "verhülf"
+    ],
+    "pastParticle": "verholfen"
+  },
+  "verkennen": {
+    "stems": [
+      "verkann",
+      "verkenn"
+    ],
+    "pastParticle": "verkannt"
+  },
+  "verklingen": {
+    "stems": [
+      "verklang",
+      "verkling",
+      "verkläng"
+    ],
+    "pastParticle": "verklungen"
+  },
+  "verkneifen": {
+    "stems": [
+      "verkneif",
+      "verkniff"
+    ],
+    "pastParticle": "verkniffen"
+  },
+  "verkommen": {
+    "stems": [
+      "verkam",
+      "verkomm",
+      "verkäm"
+    ],
+    "pastParticle": "verkommen"
+  },
+  "verkriechen": {
+    "stems": [
+      "verkriech",
+      "verkroch",
+      "verkröch"
+    ],
+    "pastParticle": "verkrochen"
+  },
+  "verladen": {
+    "stems": [
+      "verlad",
+      "verlud",
+      "verläd",
+      "verlüd"
+    ],
+    "pastParticle": "verladen"
+  },
+  "verlassen": {
+    "stems": [
+      "verlass",
+      "verließ",
+      "verläss"
+    ],
+    "pastParticle": "verlassen"
+  },
+  "verlaufen": {
+    "stems": [
+      "verlauf",
+      "verlief",
+      "verläuf"
+    ],
+    "pastParticle": "verlaufen"
+  },
+  "verleiden": {
+    "stems": [
+      "verleid",
+      "verlitt"
+    ],
+    "pastParticle": "verlitten"
+  },
+  "verleihen": {
+    "stems": [
+      "verleih",
+      "verlieh"
+    ],
+    "pastParticle": "verliehen"
+  },
+  "verlesen": {
+    "stems": [
+      "verlas",
+      "verles",
+      "verlies",
+      "verläs"
+    ],
+    "pastParticle": "verlesen"
+  },
+  "verlieren": {
+    "stems": [
+      "verlier",
+      "verlor",
+      "verlör"
+    ],
+    "pastParticle": "verloren"
+  },
+  "verlöschen": {
+    "stems": [
+      "verlisch",
+      "verlosch",
+      "verlösch"
+    ],
+    "pastParticle": "verloschen"
+  },
+  "vermeiden": {
+    "stems": [
+      "vermeid",
+      "vermied"
+    ],
+    "pastParticle": "vermieden"
+  },
+  "vermessen": {
+    "stems": [
+      "vermaß",
+      "vermess",
+      "vermiss",
+      "vermäß"
+    ],
+    "pastParticle": "vermessen"
+  },
+  "vermögen": {
+    "stems": [
+      "vermag",
+      "vermoch",
+      "vermöch",
+      "vermög"
+    ],
+    "pastParticle": "vermocht"
+  },
+  "vernehmen": {
+    "stems": [
+      "vernahm",
+      "vernehm",
+      "vernimm",
+      "vernähm"
+    ],
+    "pastParticle": "vernommen"
+  },
+  "verpfeifen": {
+    "stems": [
+      "verpfeif",
+      "verpfiff"
+    ],
+    "pastParticle": "verpfiffen"
+  },
+  "verquellen": {
+    "stems": [
+      "verquell",
+      "verquill",
+      "verquoll",
+      "verquöll"
+    ],
+    "pastParticle": "verquollen"
+  },
+  "verraten": {
+    "stems": [
+      "verrat",
+      "verriet",
+      "verrät"
+    ],
+    "pastParticle": "verraten"
+  },
+  "verreiben": {
+    "stems": [
+      "verreib",
+      "verrieb"
+    ],
+    "pastParticle": "verrieben"
+  },
+  "verreißen": {
+    "stems": [
+      "verreiß",
+      "verriss"
+    ],
+    "pastParticle": "verrissen"
+  },
+  "verrennen": {
+    "stems": [
+      "verrann",
+      "verrenn"
+    ],
+    "pastParticle": "verrannt"
+  },
+  "verrinnen": {
+    "stems": [
+      "verrann",
+      "verrinn",
+      "verränn",
+      "verrönn"
+    ],
+    "pastParticle": "verronnen"
+  },
+  "versaufen": {
+    "stems": [
+      "versauf",
+      "versoff",
+      "versäuf",
+      "versöff"
+    ],
+    "pastParticle": "versoffen"
+  },
+  "verschallen": {
+    "stems": [
+      "verschall",
+      "verscholl",
+      "verschöll"
+    ],
+    "pastParticle": "verschallt"
+  },
+  "verscheiden": {
+    "stems": [
+      "verscheid",
+      "verschied"
+    ],
+    "pastParticle": "verschieden"
+  },
+  "verscheißen": {
+    "stems": [
+      "verscheiß",
+      "verschiss"
+    ],
+    "pastParticle": "verschissen"
+  },
+  "verschieben": {
+    "stems": [
+      "verschieb",
+      "verschob",
+      "verschöb"
+    ],
+    "pastParticle": "verschoben"
+  },
+  "verschießen": {
+    "stems": [
+      "verschieß",
+      "verschoss",
+      "verschöss"
+    ],
+    "pastParticle": "verschossen"
+  },
+  "verschlafen": {
+    "stems": [
+      "verschlaf",
+      "verschlief",
+      "verschläf"
+    ],
+    "pastParticle": "verschlafen"
+  },
+  "verschlagen": {
+    "stems": [
+      "verschlag",
+      "verschlug",
+      "verschläg",
+      "verschlüg"
+    ],
+    "pastParticle": "verschlagen"
+  },
+  "verschleifen": {
+    "stems": [
+      "verschleif",
+      "verschliff"
+    ],
+    "pastParticle": "verschliffen"
+  },
+  "verschleißen": {
+    "stems": [
+      "verschleiß",
+      "verschliss"
+    ],
+    "pastParticle": "verschlissen"
+  },
+  "verschliefen": {
+    "stems": [
+      "verschlief",
+      "verschloff",
+      "verschlöff"
+    ],
+    "pastParticle": "verschloffen"
+  },
+  "verschließen": {
+    "stems": [
+      "verschließ",
+      "verschloss",
+      "verschlöss"
+    ],
+    "pastParticle": "verschlossen"
+  },
+  "verschlingen": {
+    "stems": [
+      "verschlang",
+      "verschling",
+      "verschläng"
+    ],
+    "pastParticle": "verschlungen"
+  },
+  "verschmelzen": {
+    "stems": [
+      "verschmelz",
+      "verschmilz",
+      "verschmolz",
+      "verschmölz"
+    ],
+    "pastParticle": "verschmolzen"
+  },
+  "verschneiden": {
+    "stems": [
+      "verschneid",
+      "verschnitt"
+    ],
+    "pastParticle": "verschnitten"
+  },
+  "verschreiben": {
+    "stems": [
+      "verschreib",
+      "verschrieb"
+    ],
+    "pastParticle": "verschrieben"
+  },
+  "verschreien": {
+    "stems": [
+      "verschrei",
+      "verschri",
+      "verschrie"
+    ],
+    "pastParticle": "verschrien"
+  },
+  "verschweigen": {
+    "stems": [
+      "verschweig",
+      "verschwieg"
+    ],
+    "pastParticle": "verschwiegen"
+  },
+  "verschwimmen": {
+    "stems": [
+      "verschwamm",
+      "verschwimm",
+      "verschwämm",
+      "verschwömm"
+    ],
+    "pastParticle": "verschwommen"
+  },
+  "verschwinden": {
+    "stems": [
+      "verschwand",
+      "verschwind",
+      "verschwänd"
+    ],
+    "pastParticle": "verschwunden"
+  },
+  "verschwören": {
+    "stems": [
+      "verschwor",
+      "verschwur",
+      "verschwör",
+      "verschwür"
+    ],
+    "pastParticle": "verschworen"
+  },
+  "versehen": {
+    "stems": [
+      "versah",
+      "verseh",
+      "versieh",
+      "versäh"
+    ],
+    "pastParticle": "versehen"
+  },
+  "versenden": {
+    "stems": [
+      "versand",
+      "versend"
+    ],
+    "pastParticle": "versandt"
+  },
+  "versingen": {
+    "stems": [
+      "versang",
+      "versing",
+      "versäng"
+    ],
+    "pastParticle": "versungen"
+  },
+  "versinken": {
+    "stems": [
+      "versank",
+      "versink",
+      "versänk"
+    ],
+    "pastParticle": "versunken"
+  },
+  "verspinnen": {
+    "stems": [
+      "verspann",
+      "verspinn",
+      "verspänn",
+      "verspönn"
+    ],
+    "pastParticle": "versponnen"
+  },
+  "verspleißen": {
+    "stems": [
+      "verspleiß",
+      "verspliss"
+    ],
+    "pastParticle": "versplissen"
+  },
+  "versprechen": {
+    "stems": [
+      "versprach",
+      "versprech",
+      "versprich",
+      "verspräch"
+    ],
+    "pastParticle": "versprochen"
+  },
+  "verspringen": {
+    "stems": [
+      "versprang",
+      "verspring",
+      "verspräng"
+    ],
+    "pastParticle": "versprungen"
+  },
+  "verstehen": {
+    "stems": [
+      "verstand",
+      "versteh",
+      "verständ",
+      "verstünd"
+    ],
+    "pastParticle": "verstanden"
+  },
+  "versteigen": {
+    "stems": [
+      "versteig",
+      "verstieg"
+    ],
+    "pastParticle": "verstiegen"
+  },
+  "versterben": {
+    "stems": [
+      "verstarb",
+      "versterb",
+      "verstirb",
+      "verstürb"
+    ],
+    "pastParticle": "verstorben"
+  },
+  "verstreichen": {
+    "stems": [
+      "verstreich",
+      "verstrich"
+    ],
+    "pastParticle": "verstrichen"
+  },
+  "vertragen": {
+    "stems": [
+      "vertrag",
+      "vertrug",
+      "verträg",
+      "vertrüg"
+    ],
+    "pastParticle": "vertragen"
+  },
+  "vertreiben": {
+    "stems": [
+      "vertreib",
+      "vertrieb"
+    ],
+    "pastParticle": "vertrieben"
+  },
+  "vertreten": {
+    "stems": [
+      "vertrat",
+      "vertret",
+      "vertritt",
+      "verträt"
+    ],
+    "pastParticle": "vertreten"
+  },
+  "vertrinken": {
+    "stems": [
+      "vertrank",
+      "vertrink",
+      "vertränk"
+    ],
+    "pastParticle": "vertrunken"
+  },
+  "vertun": {
+    "stems": [
+      "vertat",
+      "vertu",
+      "vertät"
+    ],
+    "pastParticle": "vertan"
+  },
+  "verwachsen": {
+    "stems": [
+      "verwachs",
+      "verwuchs",
+      "verwächs",
+      "verwüchs"
+    ],
+    "pastParticle": "verwachsen"
+  },
+  "verweben": {
+    "stems": [
+      "verweb",
+      "verwob",
+      "verwöb"
+    ],
+    "pastParticle": "verwoben"
+  },
+  "verweisen": {
+    "stems": [
+      "verweis",
+      "verwies"
+    ],
+    "pastParticle": "verwiesen"
+  },
+  "verwenden": {
+    "stems": [
+      "verwand",
+      "verwend"
+    ],
+    "pastParticle": "verwandt"
+  },
+  "verwerfen": {
+    "stems": [
+      "verwarf",
+      "verwerf",
+      "verwirf",
+      "verwürf"
+    ],
+    "pastParticle": "verworfen"
+  },
+  "verwiegen": {
+    "stems": [
+      "verwieg",
+      "verwog",
+      "verwög"
+    ],
+    "pastParticle": "verwogen"
+  },
+  "verwinden": {
+    "stems": [
+      "verwand",
+      "verwind",
+      "verwänd"
+    ],
+    "pastParticle": "verwunden"
+  },
+  "verzeihen": {
+    "stems": [
+      "verzeih",
+      "verzieh"
+    ],
+    "pastParticle": "verziehen"
+  },
+  "verziehen": {
+    "stems": [
+      "verzieh",
+      "verzog",
+      "verzög"
+    ],
+    "pastParticle": "verzogen"
+  },
+  "vollbringen": {
+    "stems": [
+      "vollbrach",
+      "vollbring",
+      "vollbräch"
+    ],
+    "pastParticle": "vollbracht"
+  },
+  "wissen": {
+    "stems": [
+      "weiß",
+      "wiss",
+      "wuss",
+      "wüss"
+    ],
+    "pastParticle": "gewusst"
+  },
+  "widerfahren": {
+    "stems": [
+      "widerfahr",
+      "widerfuhr",
+      "widerfähr",
+      "widerführ"
+    ],
+    "pastParticle": "widerfahren"
+  },
+  "widerrufen": {
+    "stems": [
+      "widerrief",
+      "widerruf"
+    ],
+    "pastParticle": "widerrufen"
+  },
+  "widersprechen": {
+    "stems": [
+      "widersprach",
+      "widersprech",
+      "widersprich",
+      "widerspräch"
+    ],
+    "pastParticle": "widersprochen"
+  },
+  "widerstehen": {
+    "stems": [
+      "widerstand",
+      "widersteh",
+      "widerständ",
+      "widerstünd"
+    ],
+    "pastParticle": "widerstanden"
+  },
+  "widerstreiten": {
+    "stems": [
+      "widerstreit",
+      "widerstritt"
+    ],
+    "pastParticle": "widerstritten"
+  },
+  "zeihen": {
+    "stems": [
+      "zeih",
+      "zieh"
+    ],
+    "pastParticle": "geziehen"
+  },
+  "zerbeißen": {
+    "stems": [
+      "zerbeiß",
+      "zerbiss"
+    ],
+    "pastParticle": "zerbissen"
+  },
+  "zerbersten": {
+    "stems": [
+      "zerbarst",
+      "zerberst",
+      "zerbirst",
+      "zerbärst"
+    ],
+    "pastParticle": "zerborsten"
+  },
+  "zerbrechen": {
+    "stems": [
+      "zerbrach",
+      "zerbrech",
+      "zerbrich",
+      "zerbräch"
+    ],
+    "pastParticle": "zerbrochen"
+  },
+  "zerdenken": {
+    "stems": [
+      "zerdach",
+      "zerdenk",
+      "zerdäch"
+    ],
+    "pastParticle": "zerdacht"
+  },
+  "zerfahren": {
+    "stems": [
+      "zerfahr",
+      "zerfuhr",
+      "zerfähr",
+      "zerführ"
+    ],
+    "pastParticle": "zerfahren"
+  },
+  "zerfallen": {
+    "stems": [
+      "zerfall",
+      "zerfiel",
+      "zerfäll"
+    ],
+    "pastParticle": "zerfallen"
+  },
+  "zerfließen": {
+    "stems": [
+      "zerfließ",
+      "zerfloss",
+      "zerflöss"
+    ],
+    "pastParticle": "zerflossen"
+  },
+  "zerfressen": {
+    "stems": [
+      "zerfraß",
+      "zerfress",
+      "zerfriss",
+      "zerfräß"
+    ],
+    "pastParticle": "zerfressen"
+  },
+  "zergehen": {
+    "stems": [
+      "zergeh",
+      "zerging"
+    ],
+    "pastParticle": "zergangen"
+  },
+  "zerhauen": {
+    "stems": [
+      "zerhau",
+      "zerhieb"
+    ],
+    "pastParticle": "zerhauen"
+  },
+  "zerlassen": {
+    "stems": [
+      "zerlass",
+      "zerließ",
+      "zerläss"
+    ],
+    "pastParticle": "zerlassen"
+  },
+  "zerlaufen": {
+    "stems": [
+      "zerlauf",
+      "zerlief",
+      "zerläuf"
+    ],
+    "pastParticle": "zerlaufen"
+  },
+  "zerlesen": {
+    "stems": [
+      "zerlas",
+      "zerles",
+      "zerlies",
+      "zerläs"
+    ],
+    "pastParticle": "zerlesen"
+  },
+  "zerreiben": {
+    "stems": [
+      "zerreib",
+      "zerrieb"
+    ],
+    "pastParticle": "zerrieben"
+  },
+  "zerreißen": {
+    "stems": [
+      "zerreiß",
+      "zerriss"
+    ],
+    "pastParticle": "zerrissen"
+  },
+  "zerrinnen": {
+    "stems": [
+      "zerrann",
+      "zerrinn",
+      "zerränn",
+      "zerrönn"
+    ],
+    "pastParticle": "zerronnen"
+  },
+  "zerschießen": {
+    "stems": [
+      "zerschieß",
+      "zerschoss",
+      "zerschöss"
+    ],
+    "pastParticle": "zerschossen"
+  },
+  "zerschlagen": {
+    "stems": [
+      "zerschlag",
+      "zerschlug",
+      "zerschläg",
+      "zerschlüg"
+    ],
+    "pastParticle": "zerschlagen"
+  },
+  "zerschleißen": {
+    "stems": [
+      "zerschleiß",
+      "zerschliss"
+    ],
+    "pastParticle": "zerschlissen"
+  },
+  "zerschmeißen": {
+    "stems": [
+      "zerschmeiß",
+      "zerschmiss"
+    ],
+    "pastParticle": "zerschmissen"
+  },
+  "zerschmelzen": {
+    "stems": [
+      "zerschmelz",
+      "zerschmilz",
+      "zerschmolz",
+      "zerschmölz"
+    ],
+    "pastParticle": "zerschmolzen"
+  },
+  "zerschneiden": {
+    "stems": [
+      "zerschneid",
+      "zerschnitt"
+    ],
+    "pastParticle": "zerschnitten"
+  },
+  "zersingen": {
+    "stems": [
+      "zersang",
+      "zersing",
+      "zersäng"
+    ],
+    "pastParticle": "zersungen"
+  },
+  "zerspringen": {
+    "stems": [
+      "zersprang",
+      "zerspring",
+      "zerspräng"
+    ],
+    "pastParticle": "zersprungen"
+  },
+  "zerstechen": {
+    "stems": [
+      "zerstach",
+      "zerstech",
+      "zerstich",
+      "zerstäch"
+    ],
+    "pastParticle": "zerstochen"
+  },
+  "zerstieben": {
+    "stems": [
+      "zerstieb",
+      "zerstob",
+      "zerstöb"
+    ],
+    "pastParticle": "zerstoben"
+  },
+  "zerstoßen": {
+    "stems": [
+      "zerstieß",
+      "zerstoß",
+      "zerstöß"
+    ],
+    "pastParticle": "zerstoßen"
+  },
+  "zerstreiten": {
+    "stems": [
+      "zerstreit",
+      "zerstritt"
+    ],
+    "pastParticle": "zerstritten"
+  },
+  "zertreten": {
+    "stems": [
+      "zertrat",
+      "zertret",
+      "zertritt",
+      "zerträt"
+    ],
+    "pastParticle": "zertreten"
+  },
+  "zerwerfen": {
+    "stems": [
+      "zerwarf",
+      "zerwerf",
+      "zerwirf",
+      "zerwürf"
+    ],
+    "pastParticle": "zerworfen"
+  },
+  "überbacken": {
+    "stems": [
+      "überback",
+      "überbuk",
+      "überbäck",
+      "überbük"
+    ],
+    "pastParticle": "überbacken"
+  },
+  "überbieten": {
+    "stems": [
+      "überbiet",
+      "überbot",
+      "überböt"
+    ],
+    "pastParticle": "überboten"
+  },
+  "überbinden": {
+    "stems": [
+      "überband",
+      "überbind",
+      "überbänd"
+    ],
+    "pastParticle": "überbunden"
+  },
+  "überbraten": {
+    "stems": [
+      "überbrat",
+      "überbriet",
+      "überbrät"
+    ],
+    "pastParticle": "überbraten"
+  },
+  "überbringen": {
+    "stems": [
+      "überbrach",
+      "überbring",
+      "überbräch"
+    ],
+    "pastParticle": "überbracht"
+  },
+  "überdenken": {
+    "stems": [
+      "überdach",
+      "überdenk",
+      "überdäch"
+    ],
+    "pastParticle": "überdacht"
+  },
+  "überessen": {
+    "stems": [
+      "überaß",
+      "überess",
+      "überiss",
+      "überäß"
+    ],
+    "pastParticle": "übergessen"
+  },
+  "überfallen": {
+    "stems": [
+      "überfall",
+      "überfiel",
+      "überfäll"
+    ],
+    "pastParticle": "überfallen"
+  },
+  "überfliegen": {
+    "stems": [
+      "überflieg",
+      "überflog",
+      "überflög"
+    ],
+    "pastParticle": "überflogen"
+  },
+  "überfressen": {
+    "stems": [
+      "überfraß",
+      "überfress",
+      "überfriss",
+      "überfräß"
+    ],
+    "pastParticle": "überfressen"
+  },
+  "überfrieren": {
+    "stems": [
+      "überfrier",
+      "überfror",
+      "überfrör"
+    ],
+    "pastParticle": "überfroren"
+  },
+  "übergeben": {
+    "stems": [
+      "übergab",
+      "übergeb",
+      "übergib",
+      "übergäb"
+    ],
+    "pastParticle": "übergeben"
+  },
+  "überhelfen": {
+    "stems": [
+      "überhalf",
+      "überhelf",
+      "überhilf",
+      "überhälf",
+      "überhülf"
+    ],
+    "pastParticle": "überholfen"
+  },
+  "überkommen": {
+    "stems": [
+      "überkam",
+      "überkomm",
+      "überkäm"
+    ],
+    "pastParticle": "überkommen"
+  },
+  "überladen": {
+    "stems": [
+      "überlad",
+      "überlud",
+      "überläd",
+      "überlüd"
+    ],
+    "pastParticle": "überladen"
+  },
+  "überlassen": {
+    "stems": [
+      "überlass",
+      "überließ",
+      "überläss"
+    ],
+    "pastParticle": "überlassen"
+  },
+  "überlesen": {
+    "stems": [
+      "überlas",
+      "überles",
+      "überlies",
+      "überläs"
+    ],
+    "pastParticle": "überlesen"
+  },
+  "übernehmen": {
+    "stems": [
+      "übernahm",
+      "übernehm",
+      "übernimm",
+      "übernähm"
+    ],
+    "pastParticle": "übernommen"
+  },
+  "überreißen": {
+    "stems": [
+      "überreiß",
+      "überriss"
+    ],
+    "pastParticle": "überrissen"
+  },
+  "überschlafen": {
+    "stems": [
+      "überschlaf",
+      "überschlief",
+      "überschläf"
+    ],
+    "pastParticle": "überschlafen"
+  },
+  "überschlagen": {
+    "stems": [
+      "überschlag",
+      "überschlug",
+      "überschläg",
+      "überschlüg"
+    ],
+    "pastParticle": "überschlagen"
+  },
+  "überschneiden": {
+    "stems": [
+      "überschneid",
+      "überschnitt"
+    ],
+    "pastParticle": "überschnitten"
+  },
+  "überschreiben": {
+    "stems": [
+      "überschreib",
+      "überschrieb"
+    ],
+    "pastParticle": "überschrieben"
+  },
+  "übersehen": {
+    "stems": [
+      "übersah",
+      "überseh",
+      "übersieh",
+      "übersäh"
+    ],
+    "pastParticle": "übersehen"
+  },
+  "übersenden": {
+    "stems": [
+      "übersand",
+      "übersend"
+    ],
+    "pastParticle": "übersandt"
+  },
+  "überspinnen": {
+    "stems": [
+      "überspann",
+      "überspinn",
+      "überspänn",
+      "überspönn"
+    ],
+    "pastParticle": "übersponnen"
+  },
+  "übersprechen": {
+    "stems": [
+      "übersprach",
+      "übersprech",
+      "übersprich",
+      "überspräch"
+    ],
+    "pastParticle": "übersprochen"
+  },
+  "überspringen": {
+    "stems": [
+      "übersprang",
+      "überspring",
+      "überspräng"
+    ],
+    "pastParticle": "übersprungen"
+  },
+  "übersteigen": {
+    "stems": [
+      "übersteig",
+      "überstieg"
+    ],
+    "pastParticle": "überstiegen"
+  },
+  "überstreichen": {
+    "stems": [
+      "überstreich",
+      "überstrich"
+    ],
+    "pastParticle": "überstrichen"
+  },
+  "übertragen": {
+    "stems": [
+      "übertrag",
+      "übertrug",
+      "überträg",
+      "übertrüg"
+    ],
+    "pastParticle": "übertragen"
+  },
+  "übertreffen": {
+    "stems": [
+      "übertraf",
+      "übertreff",
+      "übertriff",
+      "überträf"
+    ],
+    "pastParticle": "übertroffen"
+  },
+  "übertreiben": {
+    "stems": [
+      "übertreib",
+      "übertrieb"
+    ],
+    "pastParticle": "übertrieben"
+  },
+  "überwachsen": {
+    "stems": [
+      "überwachs",
+      "überwuchs",
+      "überwächs",
+      "überwüchs"
+    ],
+    "pastParticle": "überwachsen"
+  },
+  "überweisen": {
+    "stems": [
+      "überweis",
+      "überwies"
+    ],
+    "pastParticle": "überwiesen"
+  },
+  "überwerfen": {
+    "stems": [
+      "überwarf",
+      "überwerf",
+      "überwirf",
+      "überwürf"
+    ],
+    "pastParticle": "überworfen"
+  },
+  "überwiegen": {
+    "stems": [
+      "überwieg",
+      "überwog",
+      "überwög"
+    ],
+    "pastParticle": "überwogen"
+  },
+  "überwinden": {
+    "stems": [
+      "überwand",
+      "überwind",
+      "überwänd"
+    ],
+    "pastParticle": "überwunden"
+  },
+  "winken": {
+    "stems": [
+      "wink"
+    ],
+    "pastParticle": "gewunken"
+  }
+}
